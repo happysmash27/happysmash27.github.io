@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title="Floating Computer Terminal"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+  <body style="text-align:center;">
+    <h1>Floating Computer Terminal</h1>
+    <p>This is a floating computer terminal, which allows people to ssh into public access unix systems. It is pretty convinient, especially when it follows you around...</p>
+    <svg width="50%" viewbox="0 0 600 600" style="text-align: center; border-style:solid;">
+      <g id="rects" class="rects">
+	<defs>
+	  
+        <linearGradient id="Chrome" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#666666"/>
+          <stop offset="100%" stop-color="#333333"/>
+	</linearGradient>
+	
+	<symbol id="float-line">
+	  <path d="M 10 0 h 80 c 10 0, 10 10, 0 10 h -80 c -10 0, -10 -10, 0 -10" fill="#3366ff" opacity="0.9">
+	</symbol>
+	
+	<symbol id="float-lines">
+	  <use xlink:href="#float-line" x="0" y="-1000">
+	    <animate attributeName="y" begin="0s" from="0" to="75" dur="1s" repeatCount="indefinite"/>
+	    <animateTransform attributeName="transform" begin="0s" type="scale" from="1" to="0.5" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="x" begin="0s" from="0" to="25" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="opacity" begin="0s" from="0.9" to="0" dur="1s" repeatCount="indefinite"/>
+	  </use>
+	  <use xlink:href="#float-line" x="0" y="-1000">
+	    <animate attributeName="y" begin="0.5s" from="0" to="75" dur="1s" repeatCount="indefinite"/>
+	    <animateTransform attributeName="transform" begin="0.5s" type="scale" from="1" to="0.5" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="x" begin="0.5s" from="0" to="25" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="opacity" begin="0.5s" from="0.9" to="0" dur="1s" repeatCount="indefinite"/>
+	  </use>
+	  <use xlink:href="#float-line" x="0" y="-1000">
+	    <animate attributeName="y" begin="1s" from="0" to="75" dur="1s" repeatCount="indefinite"/>
+	    <animateTransform attributeName="transform" begin="1s" type="scale" from="1" to="0.5" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="x" begin="1s" from="0" to="25" dur="1s" repeatCount="indefinite"/>
+	    <animate attributeName="opacity" begin="1s" from="0.9" to="0" dur="1s" repeatCount="indefinite"/>
+	  </use>
+	</symbol>
+	
+        <symbol id="computers">
+          <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)" fill-opacity="inherit">
+            <animate id="rf1" begin="0s; rf2.end" attributeName="y" from="0" to="75" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+          </rect>
+	  <polygon points="105,-100 195,-100 195,-20 105,-20" fill="#000000">
+	    <animate id="rf1_1" begin="0s; rf2_2.end" attributeName="points" from="105,5 195,5 195,85 105,85" to="105,80 195,80 195,160 105,160" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+	    <animate id="rc1_1" begin="mouseover" attributeName="fill" from="#000000" to="#3366ff" dur="0.25s"/>
+	    <animate id="rc2_2" begin="mouseout" attributeName="fill" from="#3366ff" to="#000000" dur="0.25s"/>
+	  </polygon>
+          <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)" fill-opacity="inherit">
+            <animate id="rf2" begin="rf1.end" attributeName="y" from="75" to="0" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+          </rect>
+	  <polygon points="105,-100 195,-100 195,-10 105,-10" fill="#000000">
+	    <animate id="rf2_2" begin="rf1_1.end" attributeName="points" from="105,80 195,80 195,160 105,160" to="105,5 195,5 195,85 105,85" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+	    <animate id="rc1_1" begin="mouseover" attributeName="fill" from="#000000" to="#3366ff" dur="0.25s"/>
+	    <animate id="rc2_2" begin="mouseout" attributeName="fill" from="#3366ff" to="#000000" dur="0.25s"/>
+	  </polygon>
+	  <line x1="170" x2="190" y1="-93" y2="-93" stroke-width="10" stroke="black">
+	    <animate id="line1_1" begin="0s; line2_1.end" attributeName="y1" from="93" to="168" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" fill="remove"/>
+	    <animate id="line1_2" begin="0s; line2_2.end" attributeName="y2" from="93" to="168" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" fill="remove"/>
+	  </line>
+	  <line x1="170" x2="190" y1="-93" y2="-93" stroke-width="10" stroke="black">
+	    <animate id="line2_1" begin="line1_1.end" attributeName="y1" from="168" to="93" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" fill="remove"/>
+	    <animate id="line2_2" begin="line1_2.end" attributeName="y2" from="168" to="93" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" fill="remove">
+	  </line>
+	  <use xlink:href="#float-lines" x="100" y="-1500">
+	    <animate id="fl1" attributeName="y" from="102" to="177" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" begin="0s; fl2.end"/>
+	  </use>
+	  <use xlink:href="#float-lines" x="100" y="-1500">
+	    <animate id="fl2" attributeName="y" from="177" to="102" dur="2s" calcMode="spline" keySplines=".5 0 .5 1" begin="fl1.end"/>
+	  </use>
+        </symbol>
+	
+        <symbol id="MC">
+          <use xlink:href="#computers" x="300" fill-opacity="inherit">
+            <animate begin="0s" attributeName="x" from="-300" to="700" dur="5s" repeatCount="indefinite"/>
+        </symbol>
+	
+      </defs>
+      <use xlink:href="#MC" y="-500">
+        <animate id="an1" begin="FC.end" attributeName="y" from="200" to="0" dur="0.75s" calcMode="spline" keySplines=".5 0 .5 1"/>
+      </use>
+      <use xlink:href="#MC" y="-500">
+        <animate id="an2" begin="an1.end" attributeName="y" from="0" to="200" dur="0.75s" calcMode="spline" keySplines=".5 0 .5 1"/>
+      </use>
+      <use xlink:href="#MC" y="200">
+        <animate id="FC" begin="click" attributeName="fill-opacity" from="1" to="0" dur="0.01s" calcMode="discrete" fill="freeze"/>
+	<animate id="FC" begin="click" attributeName="stroke-opacity" from="1" to="0" dur="0.01s" calcMode="discrete" fill="freeze"/>
+        <animate begin="an2.end" attributeName="fill-opacity" from="0" to="1" dur="0.01s" calcMode="discrete" fill="freeze"/>
+	<animate begin="an2.end" attributeName="stroke-opacity" from="0" to="1" dur="0.01s" calcMode="discrete" fill="freeze"/>
+      </use>
+    </svg>
+  </body>
+</html>
