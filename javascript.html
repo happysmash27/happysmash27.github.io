@@ -1,54 +1,8 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" title="Enlightenment">
+    <link rel="stylesheet" type="text/css" href="style.css" id="pageStyle" title="pageStyle">
+    <link rel="alternate stylesheet" type="text/css" href="style.css" title="Enlightenment">
     <link rel="alternate stylesheet" type="text/css" href="1337.css" title="1337">
-    <script type="text/javascript">
-      alert("It works!")
-      function itWorks(){
-        alert("It works!")
-      }
-
-      document.getElementById("alert2").onclick = function() {alert("It works too!")}
-
-      function show(){
-        document.getElementById("Fox").style.display = "block"
-        document.getElementById("show").style.display = "none"
-        document.getElementById("hide").style.display = "block"
-      }
-      function hide(){
-        document.getElementById("Fox").style.display = "none"
-        document.getElementById("show").style.display = "block"
-        document.getElementById("hide").style.display = "none"
-      }
-
-      document.getElementById("show").onclick = function(){
-        show()
-      }
-
-      document.getElementById("hide").onclick = function(){
-        hide()
-      }
-
-
-      function clrd(){
-        document.getElementById("text").style.color = "red"
-        document.getElementById("chClr1").style.display = "none"
-        document.getElementById("chClr2").style.display = "block"
-      }
-      function clrb(){
-        document.getElementById("text").style.color = "#3366ff"
-        document.getElementById("chClr1").style.display = "block"
-        document.getElementById("chClr2").style.display = "none"
-      }
-
-      document.getElementById("chClr1").onclick = function(){
-        clrd()
-      }
-
-      document.getElementById("chClr2").onclick = function(){
-        clrb()
-      }
-    </script>
   </head>
   <body>
     <button id="alert" onclick="itWorks()">Test</button>
@@ -62,14 +16,15 @@
     <button id="hide" style="display:none;">Hide Content</button>
 
     <div style="display:none;" id="Fox">
-      <p id="text">The quick brown fox jumps over the lazy dog</p>
+      <p id="text" style="text-shadow: 0px 0px 10px rgba(0.2,0.6,1.0,1.0);">The quick brown fox jumps over the lazy dog</p>
       <button id="chClr1">Change Color to Red</button>
       <button id="chClr2" style="display:none;">Change Color to Stylesheet default</button>
     </div>
 
     <br/>
 
-    <button id="en" onclick="document.getElementById">Change Style to 1337</button>
-    <button onclick="alert('Something went wrong!')">Change Style to Enlightenment</button>
+    <button id="en" onclick="changeStyle('1337.css')">Change Style to 1337</button>
+    <button onclick="changeStyle('style.css')">Change Style to Enlightenment</button>
+    <script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>

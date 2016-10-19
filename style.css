@@ -1,6 +1,7 @@
 @import url('https://code.cdn.mozilla.net/fonts/fira.css');
-html,body {
+html,body,p {
   background-color: #222222;
   color:#3366ff;
   font-family: Fira Mono;
+  text-shadow: 0px 0px 10px rgba(0.2,0.6,1.0,1.0);
 }

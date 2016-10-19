@@ -1,3 +1,7 @@
+window.onload = (function() {
+    //Do nothing
+});
+
 function itWorks(){
   alert("It works!")
 }
@@ -30,7 +34,7 @@ function clrd(){
   document.getElementById("chClr2").style.display = "block"
 }
 function clrb(){
-  document.getElementById("text").style.color = "#3366ff"
+  document.getElementById("text").style.color = "inherit"
   document.getElementById("chClr1").style.display = "block"
   document.getElementById("chClr2").style.display = "none"
 }
@@ -41,4 +45,8 @@ document.getElementById("chClr1").onclick = function(){
 
 document.getElementById("chClr2").onclick = function(){
   clrb()
+}
+
+function changeStyle(style) {
+  document.getElementById("pageStyle").setAttribute("href", style);
 }
