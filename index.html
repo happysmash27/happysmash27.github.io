@@ -1,12 +1,21 @@
 <html>
   <head>
     <title>Vote for Foo Bar!</title>
-    <link rel="stylesheet" type="text/css" href="style.css" id="pageStyle" title="pageStyle">
+    <link rel="stylesheet" type="text/css" href="intro.css" id="pageStyle" title="pageStyle">
+    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
-    <div style="text-align:center">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/DemDonkey.svg" width="500"/>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Republicanlogo.svg" width="500"/>
+    <div class="greeting">
+      <div style="text-align:center">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/DemDonkey.svg" width="500" onclick="demoStyle()"/>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Republicanlogo.svg" width="500" onclick="repubStyle()"/>
+      </div>
+    </div>
+    <div class="democrat">
+      <h1>Vote for Foo Bar, super liberal!</h1>
+    </div>
+    <div class="republican">
+      <h1>Vote for Foo Bar, super conservative</h1>
     </div>
   </body>
 </html>
