@@ -1,9 +1,11 @@
 @import url('https://code.cdn.mozilla.net/fonts/fira.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('freefont/Free Serif.css');
 html,body,p {
-  background-color: #222222;
-  color:#3366ff;
-  font-family: Fira Mono;
-  text-shadow: 0px 0px 10px rgba(0.2,0.6,1.0,1.0);
+  font-family:Free Serif;
+  background-color:#330000;
+  color: #FFFFFF;
+  font-size:1.1em;
 }
 .greeting {
     display:none;
@@ -13,4 +15,7 @@ html,body,p {
 }
 .republican {
     display:block;
+}
+a:visited {
+    color:#aa00cc;
 }

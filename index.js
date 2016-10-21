@@ -3,9 +3,16 @@ window.onload = (function() {
 });
 
 function demoStyle(){
-    document.getElementById("pageStyle").setAttribute("href", "democrat.css")
+    document.getElementById('Motivator').play();
+    document.getElementById("pageStyle").setAttribute("href", "democrat.css");
 }
 
 function repubStyle(){
-    document.getElementById("pageStyle").setAttribute("href", "republican.css")
+    document.getElementById('Presenterator').play();
+    document.getElementById("pageStyle").setAttribute("href", "republican.css");
+}
+
+function liberStyle(){
+    // alert("What?! There couldn't possibly be a *third* political party in the United States! Or fourth. Or fifth...");
+    document.getElementById('Impossible').play();
 }

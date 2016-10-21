@@ -1,6 +1,8 @@
 @import url('https://code.cdn.mozilla.net/fonts/fira.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('freefont/Free Serif.css');
 html,body,p {
-  font-family:Serif;
+  font-family:Noto Serif;
   background-color:#000033;
   color: #FFFFFF;
 }
@@ -12,4 +14,10 @@ html,body,p {
 }
 .republican {
     display:none;
+}
+a:visited {
+    color:#8800ff;
+}
+a:link {
+    color:#0000ff;
 }

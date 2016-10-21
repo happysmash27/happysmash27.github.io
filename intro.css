@@ -1,4 +1,6 @@
 @import url('https://code.cdn.mozilla.net/fonts/fira.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+@import url('freefont/Free Serif.css');
 html,body,p {
   background-color: #222222;
   color:#3366ff;
