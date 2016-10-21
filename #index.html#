@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Vote for Foo Bar!</title>
+    <link rel="stylesheet" type="text/css" href="intro.css" id="pageStyle" title="pageStyle">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="greeting">
+      <div style="text-align:center">
+	<img src="DemDonkey.svg" width="30%" onclick="demoStyle()"/>
+	<img src="Republicanlogo.svg" width="30%" onclick="repubStyle()"/>
+	<img src="Libertarian_Party_Porcupine_%28USA%29.svg" width="30%" onclick="liberStyle()"/>
+      </div>
+    </div>
+    <div class="democrat">
+      <h1>Vote for Foo Bar, super liberal! To change the world for the better!</h1>
+      <h2>I will (definitelly not copied from Wikipedia):</h2>
+      <ul>  </ul>
+      <p>Seriously though, even though this just happens to have nearly the exact same wording, links and citations, this is definitelly not copied from Wikipedia at all! It is completelly original. Please believe me.</p>
+    </div>
+    <div class="republican">
+      <h1>Vote for Foo Bar, super conservative! To be more conservative!</h1>
+      <h2>I will:</h2>
+      <ul>
+	<li>Premote the free market</li>
+	<li>Reduce regulations</li>
+	<li>Stop illegal immegration</li>
+	<li>Premote pro-life policies</li>
+	<li>Discourage <a href="https://en.wikipedia.org/wiki/Affirmative_action">affirmative action</a></li>
+	<li>Oppose laws regulating guns</li>
+	<li>Oppose LGBT rights</li>
+      </ul>
+    </div>
+    <!--<audio src="Local Forecast.mp3" autoplay="true" loop="true" preload="auto" volume="0.1"/>-->
+    <audio src="Impossible!.ogg" id="Impossible"/>
+    <audio src="Motivator.mp3" id="Motivator" loop="true"/>
+    <audio src="Presenterator.mp3" id="Presenterator" loop="true"/>
+  </body>
+</html>

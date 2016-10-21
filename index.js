@@ -3,11 +3,13 @@ window.onload = (function() {
 });
 
 function demoStyle(){
+    document.getElementById('Inspired').pause();
     document.getElementById('Motivator').play();
     document.getElementById("pageStyle").setAttribute("href", "democrat.css");
 }
 
 function repubStyle(){
+    document.getElementById('Inspired').pause();
     document.getElementById('Presenterator').play();
     document.getElementById("pageStyle").setAttribute("href", "republican.css");
 }
