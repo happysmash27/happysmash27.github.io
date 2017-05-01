@@ -1,5 +1,5 @@
 A Hero's Journey
--Jseph Campbell's Hero's Journey pattern
+-Joseph Campbell's Hero's Journey pattern
 
 
 Part I: Departure
@@ -10,7 +10,7 @@ Character may initially reject the call of action but usually come anyway
 
 Crossing the Threshold
 
-The threshold is the boundary between the life th ehero has known before and the unknown challanges that await him. Behind him is his home and his past life - before him is uncertainty and danger.
+The threshold is the boundary between the life the hero has known before and the unknown challanges that await him. Behind him is his home and his past life - before him is uncertainty and danger.
 
 Crossing the threshold, then, is when the hero takes the first steps on his adventure, leaving home and setting off on his journey.
 
