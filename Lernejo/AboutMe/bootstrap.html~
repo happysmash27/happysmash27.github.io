@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="custom.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header row">
+	<div class="col-lg-2 navbar-brand">
+	  <img src="PrideAvatarBig.png">
+	</div>
+	<div class="col-lg-8">
+	  <div class="row">
+	    <h1>happysmash28</h1>
+	    <h2>(aka /u/happysmash27, 27, or Nico)</h2>
+	  </div>
+	</div>
+      </header>
+
+      <article>>
+	<div class="col-sm-4">
+	  <h3>Column 1</h3>
+	  <p>This is column 1...</p>
+	  <p>Let's talk here..</p>
+	</div>
+	<div class="col-sm-4">
+	  <h3>Column 2</h3>
+	  <p>This is column 2...</p>
+	  <p>Let's talk here..</p>
+	</div>
+	<div class="col-sm-4">
+	  <h3>Column 3</h3> 
+	  <p>This is column 3...</p>
+	  <p>Let's talk here..</p>
+	</div>
+      </article>
+    </div>
+  </body>
+</html>
