@@ -1,0 +1,1 @@
+@media (min-width: @screen-md-min) .nav{margin:5% auto}

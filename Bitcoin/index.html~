@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>Why you should invest in cryptocurrencies</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <header align="center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="₿"><div class="subheader"><h1>Why you should invest in cryptocurrencies</h1></div>
+    </header>
+    <article align="center">
+      <p>In my opinion, investing in cryptocurrency is a very good idea. Not only does it have massive returns, but it gets us away from the greedy banks.</p>
+      <p>Often, central banks meddle in the affairs of currency. Did you know that when the U.S. Government takes out loans, it's from the Federal Reserve? But far more sinister, the Federal Reserve is actually a private company, an prints money. Money printing causes inflation, and although inflation drives the economy forward, it makes savings worth less and less over time. With large cryptocurrencies, however, the value is worth more over time, as they have a fixed amount.</p>
+      <h2>In Summery:</h2>
+      <ul>
+	<li>Decentralization</li>
+	<li>No federal reserve inflation messing with your savings</li>
+	<li>Huge investment returns if you chose the good ones</li>
+	<li>All benefits which may be able to be gotten from a specific currency you chose</li>
+      </ul>
+    </article>
+  </body>
+</html>

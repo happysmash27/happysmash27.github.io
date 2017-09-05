@@ -1,0 +1,101 @@
+html,body {
+    background-color:#8090B0;
+    color:#000;
+    font-family:'Ubuntu',sans-serif;
+}
+header{
+    background-color:#f7931a;
+    color:#FFF;
+    display:block;
+    width:1000px;
+    height:90;
+    border-radius:10px;
+    border:solid;
+    border-color:#444;
+    border-width:5px;
+    margin-left:auto;
+    margin-right:auto;
+}
+header h1{
+    background-color:#606065;
+    color:#FFF;
+    display:inline-block;
+    position:relative;
+    left:0;
+    top:-10;
+    font-size:40px;
+    padding: 0;
+    margin:20pt;
+}
+
+header img{
+    background-color:#f7931a;
+    color:#fff;
+    display:block;
+    position:relative;
+    top:5;
+    left:5;
+    height:80;
+    border-radius:10px;
+}
+
+.subheader{
+    background-color:#606366;
+    width:907.5px;
+    height:90;
+    position:relative;
+    left:92.5;
+    border-radius:0 4px 4px 0;
+    top:-80
+}
+
+h1{
+    font-family:'Ubuntu', sans-serif;
+
+}
+
+article{
+    display:block;
+    padding:5;
+    margin-top:10px;
+    border:solid;
+    border-color:#444;
+    border-width:5px;
+    width:990px;
+    border-radius: 10px;
+    background-color:#FFF;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@font-face{
+	font-family:'Ubuntu';
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-r-webfont.eot");
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-r-webfont.eot?iefix") format("eot"),url("https://bitcoin.org/font/ubuntu/ubuntu-r-webfont.woff") format("woff"),url("https://bitcoin.org/font/ubuntu/ubuntu-r-webfont.ttf") format("truetype"),url("https://bitcoin.org/font/ubuntu/ubuntu-r-webfont.svg") format("svg");
+	font-weight:300;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'Ubuntu';
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-ri-webfont.eot");
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-ri-webfont.eot?iefix") format("eot"),url("https://bitcoin.org/font/ubuntu/ubuntu-ri-webfont.woff") format("woff"),url("https://bitcoin.org/font/ubuntu/ubuntu-ri-webfont.ttf") format("truetype"),url("https://bitcoin.org/font/ubuntu/ubuntu-ri-webfont.svg") format("svg");
+	font-weight:300;
+	font-style:italic
+}
+
+@font-face{
+	font-family:'Ubuntu';
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-b-webfont.eot");
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-b-webfont.eot?iefix") format("eot"),url("https://bitcoin.org/font/ubuntu/ubuntu-b-webfont.woff") format("woff"),url("https://bitcoin.org/font/ubuntu/ubuntu-b-webfont.ttf") format("truetype"),url("https://bitcoin.org/font/ubuntu/ubuntu-b-webfont.svg") format("svg");
+	font-weight:700;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'Ubuntu';
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-bi-webfont.eot");
+	src:url("https://bitcoin.org/font/ubuntu/ubuntu-bi-webfont.eot?iefix") format("eot"),url("https://bitcoin.org/font/ubuntu/ubuntu-bi-webfont.woff") format("woff"),url("https://bitcoin.org/font/ubuntu/ubuntu-bi-webfont.ttf") format("truetype"),url("https://bitcoin.org/font/ubuntu/ubuntu-bi-webfont.svg") format("svg");
+	font-weight:700;
+	font-style:italic
+}
