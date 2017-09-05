@@ -1,0 +1,15 @@
+@import url("bootstrap-3.3.7-dist/css/bootstrap.css")
+
+@media screen and (max-width: 768px) {
+    .novmargin{margin:5% auto;}
+    body {
+      background-color: black;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+	background-color: #F00;
+    }
+    .novmargin{margin:5% auto;}
+}
