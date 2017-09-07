@@ -1,1 +1,46 @@
-@media (min-width: @screen-md-min) .nav{margin:5% auto}
+@import url("bootstrap-3.3.7-dist/css/bootstrap.css");
+
+@media screen and (min-width: 768px) {
+    .novmargin{margin:7.5% 10px;}
+}
+
+body{background-color:#060606;color:#FFF;}
+article{background-color:#FFF; color:#000;}
+
+header{
+    border-bottom:solid;
+    border-color:#05A;
+    border-width:0px 2px 5px;
+    background-color:#07C;
+    color:#FFF;
+}
+
+ul.nav li{
+    background-color:#6DD;
+    border-radius:5px;
+    color:#000;
+}
+
+ul.nav li a{
+    color:#044;
+    font-weight:bold;
+}
+
+ul.nav li a:hover{
+    color:#022;
+    font-weight:bold;
+}
+
+ul.nav li.active a:hover, ul.nav li.active a{
+    background-color:#AFF;
+    border-radius:5px;
+    color:#000;
+}
+
+ul.nav li.active a:hover{
+    background-color:#CFF;
+}
+
+ul.nav li a:hover{
+    background-color:#CFF;
+}
