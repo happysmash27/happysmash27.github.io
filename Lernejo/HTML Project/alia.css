@@ -1,6 +1,6 @@
 @import url("bootstrap-3.3.7-dist/css/bootstrap.css");
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     .novmargin{margin:7.5% 10px;}
 }
 
@@ -16,25 +16,31 @@ header{
 }
 
 ul.nav li{
-    background-color:#AAA;
+    background-color:#6DD;
     border-radius:5px;
     color:#000;
 }
 
-ul.nav li.active{
-    background-color:#FFF;
-    border-radius:5px;
-    color:#000;
+ul.nav li a{
+    color:#044;
+    font-weight:bold;
 }
 
-ul.nav li.active a{
-    background-color:#FBFBFB;
+ul.nav li a:hover{
+    color:#022;
+    font-weight:bold;
+}
+
+ul.nav li.active a:hover, ul.nav li.active a{
+    background-color:#AFF;
     border-radius:5px;
     color:#000;
 }
 
 ul.nav li.active a:hover{
-    background-color:#FFF;
-    border-radius:5px;
-    color:#000;
+    background-color:#CFF;
+}
+
+ul.nav li a:hover{
+    background-color:#CFF;
 }
