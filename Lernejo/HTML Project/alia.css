@@ -60,3 +60,5 @@ ul.nav li a:hover, ul.nav li a:focus {
     image-rendering:pixelated;                 /* CSS4 Proposed  */
     -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 }
+
+p, article h1{padding:0px 10px;}
