@@ -61,4 +61,12 @@ ul.nav li a:hover, ul.nav li a:focus {
     -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 }
 
-p, article h1{padding:0px 10px;}
+article p, article h1, article h2, article h3, article h4, article h5, article h6, article blockquote{padding:0px 10px;}
+article blockquote{
+    margin:10px 10px;
+    background-color:#6b6b50;
+    border-left:solid;
+    border-width:5px;
+    border-color:#4b4b30;
+    color:#FFF;
+}
