@@ -1,0 +1,18 @@
+.page-header{
+    background-color:#00C0C0;
+    color:#FFF;
+    border-radius:10px;
+    border:solid;
+    border-color:#205050;
+    border-width:5px;
+}
+
+article{
+    
+    border:solid;
+    border-color:#205050;
+    border-width:5px;
+    
+    border-radius: 10px;
+    background-color:#FFF;
+}
