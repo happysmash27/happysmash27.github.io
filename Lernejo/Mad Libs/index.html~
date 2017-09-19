@@ -7,11 +7,12 @@
   </head>
   <body>
     <form id="MadLibs">
-      <input type="text" name="substantivo" id="substantivo1" placeholder="substantivo"><br/>
-      <input type="text" name="verbo" id="verbo1" placeholder="verbo"><br/>
-      <input type="text" name="adjektivo" id="adjektivo1" placeholder="adjektivo"><br/>
-      <input type="submit" value="Submetu">
+      <input type="text" class="substantivo" name="substantivo" id="substantivo1" placeholder="substantivo"><br/>
+      <input type="text" class="verbo" name="verbo" id="verbo1" placeholder="verbo"><br/>
+      <input type="text" class="verbo" name="adjektivo" id="adjektivo1" placeholder="adjektivo"><br/>
+      <input type="submit" id="submetu" value="Submetu">
     </form>
+    <p id="teksto"></p>
     <script src="index.js"></script>
   </body>
 </html>
