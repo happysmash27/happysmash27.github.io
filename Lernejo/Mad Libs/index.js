@@ -12,11 +12,19 @@ if (window.navigator.language=="en"){
 	else if(enigoj[i].type.toLowerCase()=="text"){
 	    if(enigoj[i].className=="substantivo"){
 		enigoj[i].placeholder="noun"
-	    } else if(enigoj[i].className=="verbo is-tempo"){
+	    } else if(enigoj[i].className=="substantivoj"){
+		enigoj[i].placeholder="noun (plural)"
+	    } else if(enigoj[i].className=="verbo is-tempa transitiva"){
+		enigoj[i].placeholder="verb (past tense transitive)"
+	    } else if(enigoj[i].className=="verbo is-tempa"){
 		enigoj[i].placeholder="verb (past tense)"
-	    } else if(enigoj[i].className=="verbo as-tempo"){
+	    } else if(enigoj[i].className=="verbo as-tempa transitiva"){
+		enigoj[i].placeholder="verb (present tense transitive)"
+	    } else if(enigoj[i].className=="verbo as-tempa"){
 		enigoj[i].placeholder="verb (present tense)"
-	    } else if(enigoj[i].className=="verbo os-tempo"){
+	    } else if(enigoj[i].className=="verbo os-tempa transitiva"){
+		enigoj[i].placeholder="verb (future tense transitive)"
+	    } else if(enigoj[i].className=="verbo os-tempa"){
 		enigoj[i].placeholder="verb (future tense)"
 	    } else if(enigoj[i].className=="adjektivo"){
 		enigoj[i].placeholder="adjective"
@@ -26,13 +34,13 @@ if (window.navigator.language=="en"){
     teksto=document.getElementById("teksto");
     document.getElementById("submetu").onclick=function(event){
 	event.preventDefault();
-	teksto.innerHTML = "The "+document.getElementById("adjektivo1").value+" "+document.getElementById("adjektivo2").value+" "+document.getElementById("substantivo1").value+" "+document.getElementById("verbo1").value+" over the "+document.getElementById("adjektivo3").value+" "+document.getElementById("substantivo2").value
+	teksto.innerHTML = "One day, I went outside and saw many "+document.getElementById("adjektivo1").value+", "+document.getElementById("adjektivo2").value+" "+document.getElementById("substantivoj1").value+"! I immediatly "+document.getElementById("verbo1").value+" in order to try and "+document.getElementById("verbo2").value+" them. But it didn't work! Now I'm "+document.getElementById("adjektivo3").value+"!"
     }
 } else {
     console.log("Uzas eo");
     teksto=document.getElementById("teksto");
     document.getElementById("submetu").onclick=function(event){
 	event.preventDefault();
-	teksto.innerHTML = "La "+document.getElementById("adjektivo1").value+" "+document.getElementById("adjektivo2").value+" "+document.getElementById("substantivo1").value+" "+document.getElementById("verbo1").value+" sur la "+document.getElementById("adjektivo3").value+" "+document.getElementById("substantivo2").value
+	teksto.innerHTML = "Unu tago, mi iras ekstere kaj vidis multaj da "+document.getElementById("adjektivo1").value+"jn, "+document.getElementById("adjektivo2").value+"jn "+document.getElementById("substantivoj1").value+"jn! Mi tuje "+document.getElementById("verbo1").value+" por provi "+document.getElementById("verbo2").value+" ilin. Sed ĝi ne funkciis! Nun mi estas "+document.getElementById("adjektivo3").value+"!"
     }
 }

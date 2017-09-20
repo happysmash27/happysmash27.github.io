@@ -1,0 +1,8 @@
+html, body{
+    font-family:Noto Sans, sans-serif;
+}
+
+noscript{
+    background-color:#F00;
+    color:#FFF;
+}
