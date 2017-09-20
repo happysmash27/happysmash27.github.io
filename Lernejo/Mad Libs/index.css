@@ -1,8 +1,47 @@
 html, body{
     font-family:Noto Sans, sans-serif;
+    background-color:#060606;
+    color:#FFF;
+    text-align:center;
 }
 
 noscript{
     background-color:#F00;
     color:#FFF;
+    border:solid;
+    border-color:#D00;
+    border-width:2px;
+    width:90%;
+    padding:5px;
+    margin:10px;
+}
+
+article{
+    width:400px;
+    margin:10px auto;
+    padding:5px 0px 5px 0px;
+    background-color:#FFF;
+    color:#000;
+    text-align:center;
+}
+
+noscript{
+    text-align:center;
+}
+
+.substantivo, .substantivoj, .adjektivo, .verbo{
+    background-color:#FFF;
+    border-color:#000 #000 #000 #000;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    outline:0;
+    border-style:solid;
+    border-width:1px;
+    margin:1.5px;
+}
+
+#submetu{
+    background-color:#AAA;
+    border-color:#888;
+    margin:1.5px;
 }
