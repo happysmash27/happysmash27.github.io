@@ -1,6 +1,6 @@
 console.log(window.navigator.language);
 teksto=document.getElementById("teksto");
-if (window.navigator.language=="en"){
+if (window.navigator.language=="en"||true){
     console.log("en")
     document.documentElement.lang="en"
     enigoj=document.getElementsByTagName("input");
@@ -14,6 +14,10 @@ if (window.navigator.language=="en"){
 		enigoj[i].placeholder="noun"
 	    } else if(enigoj[i].className=="substantivoj"){
 		enigoj[i].placeholder="noun (plural)"
+	    } else if(enigoj[i].className=="verbo transitiva"){
+		enigoj[i].placeholder="verb (transitive)"
+	    } else if(enigoj[i].className=="verbo"){
+		enigoj[i].placeholder="verb"
 	    } else if(enigoj[i].className=="verbo is-tempa transitiva"){
 		enigoj[i].placeholder="verb (past tense transitive)"
 	    } else if(enigoj[i].className=="verbo is-tempa"){
