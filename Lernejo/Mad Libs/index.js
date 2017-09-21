@@ -39,7 +39,7 @@ if (window.navigator.language.substring(0,2)=="en"){
     document.getElementById("submetu").onclick=function(event){
 	event.preventDefault();
 	if (document.getElementById("adjektivo1").value==""||document.getElementById("adjektivo2").value==""||document.getElementById("substantivoj1").value==""||document.getElementById("verbo1").value==""||document.getElementById("verbo2").value==""||document.getElementById("adjektivo3").value==""){
-	    alert("Please add input!")
+	    alert("Please add text to all of the inputs!")
 	} else {
 	    teksto.innerHTML = "One day, I went outside and saw many "+document.getElementById("adjektivo1").value+", "+document.getElementById("adjektivo2").value+" "+document.getElementById("substantivoj1").value+"! I immediatly "+document.getElementById("verbo1").value+" in order to try and "+document.getElementById("verbo2").value+" them. But it didn't work! Now I'm "+document.getElementById("adjektivo3").value+"!"
 	}
@@ -50,7 +50,7 @@ if (window.navigator.language.substring(0,2)=="en"){
     document.getElementById("submetu").onclick=function(event){
 	event.preventDefault();
 	if (document.getElementById("adjektivo1").value==""||document.getElementById("adjektivo2").value==""||document.getElementById("substantivoj1").value==""||document.getElementById("verbo1").value==""||document.getElementById("verbo2").value==""||document.getElementById("adjektivo3").value==""){
-	    alert("Bonvolu adi enigon!")
+	    alert("Bonvolu adi tekston al ĉiom da la enigoj!")
 	} else {
 	    teksto.innerHTML = "Unu tago, mi iras ekstere kaj vidis multaj da "+document.getElementById("adjektivo1").value+"jn, "+document.getElementById("adjektivo2").value+"jn "+document.getElementById("substantivoj1").value+"jn! Mi tuje "+document.getElementById("verbo1").value+" por provi "+document.getElementById("verbo2").value+" ilin. Sed ĝi ne funkciis! Nun mi estas "+document.getElementById("adjektivo3").value+"!"
 	}
