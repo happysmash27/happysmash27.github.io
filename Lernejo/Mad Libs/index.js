@@ -1,6 +1,6 @@
-console.log(window.navigator.language);
+console.log(window.navigator.language.substring(0,2));
 teksto=document.getElementById("teksto");
-if (window.navigator.language=="en"){
+if (window.navigator.language.substring(0,2)=="en"){
     console.log("en")
     document.documentElement.lang="en"
     enigoj=document.getElementsByTagName("input");
