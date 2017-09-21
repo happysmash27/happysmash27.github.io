@@ -21,15 +21,15 @@ if (window.navigator.language.substring(0,2)=="en"){
 	    } else if(enigoj[i].className=="verbo is-tempa transitiva"){
 		enigoj[i].placeholder="verb (past tense transitive)"
 	    } else if(enigoj[i].className=="verbo is-tempa"){
-		enigoj[i].placeholder="verb (past tense)"
+		enigoj[i].placeholder="verb (past tense intransitive)"
 	    } else if(enigoj[i].className=="verbo as-tempa transitiva"){
 		enigoj[i].placeholder="verb (present tense transitive)"
 	    } else if(enigoj[i].className=="verbo as-tempa"){
-		enigoj[i].placeholder="verb (present tense)"
+		enigoj[i].placeholder="verb (present tense intransitive)"
 	    } else if(enigoj[i].className=="verbo os-tempa transitiva"){
 		enigoj[i].placeholder="verb (future tense transitive)"
 	    } else if(enigoj[i].className=="verbo os-tempa"){
-		enigoj[i].placeholder="verb (future tense)"
+		enigoj[i].placeholder="verb (future tense intransitive)"
 	    } else if(enigoj[i].className=="adjektivo"){
 		enigoj[i].placeholder="adjective"
 	    }
