@@ -40,6 +40,7 @@ noscript{
     border-width:1px;
     margin:1.5px;
     color:#000;
+    border-radius:0px;
 }
 
 #submetu{
@@ -47,4 +48,5 @@ noscript{
     border-color:#888;
     margin:1.5px;
     color:#000;
+    border-radius:0px;
 }
