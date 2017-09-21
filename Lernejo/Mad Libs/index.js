@@ -1,6 +1,6 @@
 console.log(window.navigator.language);
 teksto=document.getElementById("teksto");
-if (window.navigator.language=="en"||true){
+if (window.navigator.language=="en"){
     console.log("en")
     document.documentElement.lang="en"
     enigoj=document.getElementsByTagName("input");
