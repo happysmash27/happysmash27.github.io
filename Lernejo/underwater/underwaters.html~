@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Underwater Animals</title>
+    <link rel="stylesheet" type='text/css' href="underwater.css" />
+  </head>
+  <body>
+
+    <h1>Underwater Animals</h1>
+
+    <div style="background: rgba(50, 153, 110, 0.7);">
+      <h2>Octopus</h2>
+      <p>
+	The octopus is a soft-bodied, eight-armed mollusc of the order Octopoda.
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Octopus2.jpg" alt="Common octopus (Octopus vulgaris)">
+      <button onclick="showOctopus()">Show a Fact!</button>
+</div>
+
+<div style="background:rgba(127, 33, 66, 0.7);">
+  <h2>Anglerfish</h2>
+  <p>
+    Anglerfish are bony fish named for their characteristic mode of predation, in which
+    a fleshy growth from the fish's head (the esca or illicium) acts as a lure.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Melanocetus_johnsonii1.jpg" alt="Anglerfish, most likely a humpback anglerfish (Melanocetus johnsonii) specifically">
+  <button onclick="showOctopus()">Show a Fact!</button>
+</div>
+
+<div style="background: rgba(103, 70, 186, 0.7);">
+  <h2>Goblin Shark</h2>
+  <p>
+    The goblin shark is a rare species of deep-sea shark with an elongated, flattened
+    snout, and highly protrusible jaws containing prominent nail-like teeth.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Mistukurina_owstoni_museum_victoria.jpg" alt="Juvenile goblin shark (Mitsukurina owstoni)">
+  <button onclick="showOctopus()">Show a Fact!</button>
+</div>
+
+<div style="background: rgba(83, 107, 204, 0.7);">
+  <h2>Sea Lion</h2>
+  <p>
+    Sea lions are sea mammals characterized by external ear flaps, long foreflippers, the ability to walk
+    on all fours, and short, thick hair, big chest and belly.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/California_sea_lion_in_La_Jolla_%2870568%29.jpg" alt="California sea lion (Zalophus californianus) and a Western gull (Larus occidentalis) in Scripps Park in La Jolla (San Diego, California).">
+  <button onclick="showOctopus()">Show a Fact!</button>
+</div>
+
+<div style="background: rgba(0, 200, 200, 0.7);" id="manatee">
+  <h2>Manatees</h2>
+  <p>
+    Manatees (family Trichechidae, genus Trichechus) are large, fully aquatic, mostly herbivorous marine mammals sometimes known as sea cows.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Two_manatee_rooting_for_food_in_bottom_sand.jpg" alt="Two manatee rooting for food in bottom sand">
+  <button onclick="showOctopus()">Show a Fact!</button>
+</div>
+
+<div style="background: rgba(200, 150, 100, 0.7);" id="walrus">
+  <h2>Walrus</h2>
+  <p>
+    The walrus (Odobenus rosmarus) is a large flippered marine mammal with a discontinuous distribution about the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.
+  </p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Pacific_walrus_bull_odobenus_rosmarus.jpg" alt="Male Walrus">
+  <button onclick="showOctopus()">Show a Fact!</button>
+<p id="walrusFact"></p>
+</div>
+<script src="underwater.js"></script>
+</body>
+</html>
