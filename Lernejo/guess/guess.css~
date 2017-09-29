@@ -44,7 +44,7 @@ input {
     margin-right: auto;
 }
 
-#guessButton, #resetButton {
+#guessButton {
     background-color: aliceblue;
     color: royalblue;
     font-family: "Sigmar One";

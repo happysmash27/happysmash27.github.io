@@ -12,3 +12,10 @@ function guess(){
 	document.getElementById("counter").innerHTML = guess + " is too low. Guesses so far: " + numGuesses;
     }
 }
+
+function reset(){
+    numGuesses = 0;
+    randomNumber = Math.floor(Math.random() * 100 + 1);
+    document.getElementById("counter").innerHTML="Guesses so far: "+numGuesses;
+    document.getElementById("guess").value="";
+}
