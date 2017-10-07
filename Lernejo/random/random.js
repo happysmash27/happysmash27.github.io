@@ -101,9 +101,12 @@ function createThirdScene() {
     makeBdRect("80","40","6","44","#FFF","#000")
     makeBdRect(30,10,106,64,"#FFF","#000")
     makeBdRect(35,15,96,54,"#000","#000")
-    if (Math.random()<=0.5){
+    var rand = (Math.random())
+    if (rand<=0.3){
 	makeIframe(35,15,96,54,1920,1080,"https://kde.org")
-    } else{makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")}
+    } else if (rand<=0.6){makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")} else {
+	makeIframe(35,15,96,54,1920,1080,"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO")
+    }
 }
 
 
