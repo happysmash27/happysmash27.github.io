@@ -27,12 +27,20 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
+    
     makeCircle(Math.random()*200,Math.random()*100, Math.random()*50, createColor());
     var rectWidth = Math.random()*100;
     var rectHeight = Math.random()*100;
-    makeRect(Math.random()*200-rectWidth,Math.random()*100-rectHeight, rectWidth, rectHeight, createColor());
-    var pathc = createColor()
-    makePath("M " + Math.random()*200 + " " + Math.random()*100 + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " C",pathc,pathc);
+    var rectY1 = Math.random*100-rectHeight
+    var rectY2 = Math.random*100-rectHeight
+    var rect1 = makeRect(Math.random()*200-rectWidth,-200, rectWidth, rectHeight, createColor());
+    var rect2 = makeRect(Math.random()*200-rectWidth,-200, rectWidth, rectHeight, createColor());
+    var rectAnimate1 = document.createElementNS(namespace, "animate");
+    var rectAnimate1 = document.createElementNS(namespace, "animate");
+    rect2.appendChild(rectAnimate2);
+    rect2.appendChild(rectAnimate2);
+    var pathcolor = createColor()
+    makePath("M " + Math.random()*200 + " " + Math.random()*100 + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " C",pathcolor,pathcolor);
 }
 
 
