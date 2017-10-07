@@ -31,13 +31,33 @@ function createSecondScene() {
     makeCircle(Math.random()*200,Math.random()*100, Math.random()*50, createColor());
     var rectWidth = Math.random()*100;
     var rectHeight = Math.random()*100;
-    var rectY1 = Math.random*100-rectHeight
-    var rectY2 = Math.random*100-rectHeight
-    var rect1 = makeRect(Math.random()*200-rectWidth,-200, rectWidth, rectHeight, createColor());
-    var rect2 = makeRect(Math.random()*200-rectWidth,-200, rectWidth, rectHeight, createColor());
+    var rectY1 = Math.random()*(100-rectHeight)
+    var rectY2 = Math.random()*(100-rectHeight)
+    rectX = Math.random()*(200-rectWidth);
+    var durRect = Math.random()*10+"s";
+    rectColor1 = createColor();
+    rectColor2 = createColor();
+    var rect1 = makeRect(rectX,-200, rectWidth, rectHeight, rectColor1);
+    var rect2 = makeRect(rectX,-200, rectWidth, rectHeight, rectColor1);
     var rectAnimate1 = document.createElementNS(namespace, "animate");
-    var rectAnimate1 = document.createElementNS(namespace, "animate");
-    rect2.appendChild(rectAnimate2);
+    rectAnimate1.setAttribute("id", "rectAnimate1");
+    rectAnimate1.setAttribute("begin", Math.random()*0.5+"; rectAnimate2.end");
+    rectAnimate1.setAttribute("attributeName", "y");
+    rectAnimate1.setAttribute("calcMode", "spline");
+    rectAnimate1.setAttribute("keySplines", ".5 0 .5 1");
+    rectAnimate1.setAttribute("dur", durRect)
+    rectAnimate1.setAttribute("from", rectY1)
+    rectAnimate1.setAttribute("to", rectY2)
+    var rectAnimate2 = document.createElementNS(namespace, "animate");
+    rectAnimate2.setAttribute("id", "rectAnimate2");
+    rectAnimate2.setAttribute("begin", "rectAnimate1.end")
+    rectAnimate2.setAttribute("attributeName", "y");
+    rectAnimate2.setAttribute("calcMode", "spline");
+    rectAnimate2.setAttribute("keySplines", ".5 0 .5 1");
+    rectAnimate2.setAttribute("dur", durRect);
+    rectAnimate2.setAttribute("from", rectY2)
+    rectAnimate2.setAttribute("to", rectY1)
+    rect1.appendChild(rectAnimate1);
     rect2.appendChild(rectAnimate2);
     var pathcolor = createColor()
     makePath("M " + Math.random()*200 + " " + Math.random()*100 + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " C",pathcolor,pathcolor);
