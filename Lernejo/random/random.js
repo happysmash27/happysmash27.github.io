@@ -102,10 +102,9 @@ function createThirdScene() {
     makeBdRect(30,10,106,64,"#FFF","#000")
     makeBdRect(35,15,96,54,"#000","#000")
     var rand = (Math.random())
-    if (rand<=0.3){
+    if (rand<=0.5){
 	makeIframe(35,15,96,54,1920,1080,"https://kde.org")
-    } else if (rand<=0.6){makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")} else {
-	makeIframe(35,15,96,54,1920,1080,"https://www.youtube.com/embed/oHg5SJYRHA0?ytcenter-autoplay=1")
+    } else {makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")}
     }
 }
 
