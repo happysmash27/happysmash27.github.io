@@ -105,7 +105,7 @@ function createThirdScene() {
     if (rand<=0.3){
 	makeIframe(35,15,96,54,1920,1080,"https://kde.org")
     } else if (rand<=0.6){makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")} else {
-	makeIframe(35,15,96,54,1920,1080,"https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO")
+	makeIframe(35,15,96,54,1920,1080,"https://www.youtube.com/embed/dQw4w9WgXcQ?ytcenter-autoplay=1")
     }
 }
 
