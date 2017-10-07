@@ -35,13 +35,14 @@ function createSecondScene() {
     var rectY2 = Math.random()*(100-rectHeight)
     rectX = Math.random()*(200-rectWidth);
     var durRect = Math.random()*10+"s";
+    var offsetRect = Math.random()*0.5;
     rectColor1 = createColor();
     rectColor2 = createColor();
     var rect1 = makeRect(rectX,-200, rectWidth, rectHeight, rectColor1);
-    var rect2 = makeRect(rectX,-200, rectWidth, rectHeight, rectColor1);
+    var rect2 = makeRect(rectX,-200, rectWidth, rectHeight, rectColor2);
     var rectAnimate1 = document.createElementNS(namespace, "animate");
     rectAnimate1.setAttribute("id", "rectAnimate1");
-    rectAnimate1.setAttribute("begin", Math.random()*0.5+"; rectAnimate2.end");
+    rectAnimate1.setAttribute("begin", offsetRect+"; rectAnimate2.end");
     rectAnimate1.setAttribute("attributeName", "y");
     rectAnimate1.setAttribute("calcMode", "spline");
     rectAnimate1.setAttribute("keySplines", ".5 0 .5 1");
@@ -59,6 +60,28 @@ function createSecondScene() {
     rectAnimate2.setAttribute("to", rectY1)
     rect1.appendChild(rectAnimate1);
     rect2.appendChild(rectAnimate2);
+
+    var rectAnimateColor1 = document.createElementNS(namespace, "animate");
+    rectAnimateColor1.setAttribute("id", "rectAnimateColor1");
+    rectAnimateColor1.setAttribute("begin", offsetRect+"; rectAnimateColor2.end");
+    rectAnimateColor1.setAttribute("attributeName", "fill");
+    rectAnimateColor1.setAttribute("calcMode", "spline");
+    rectAnimateColor1.setAttribute("keySplines", ".5 0 .5 1");
+    rectAnimateColor1.setAttribute("dur", durRect)
+    rectAnimateColor1.setAttribute("from", rectColor1)
+    rectAnimateColor1.setAttribute("to", rectColor2)
+    var rectAnimateColor2 = document.createElementNS(namespace, "animate");
+    rectAnimateColor2.setAttribute("id", "rectAnimateColor2");
+    rectAnimateColor2.setAttribute("begin", "rectAnimateColor1.end")
+    rectAnimateColor2.setAttribute("attributeName", "fill");
+    rectAnimateColor2.setAttribute("calcMode", "spline");
+    rectAnimateColor2.setAttribute("keySplines", ".5 0 .5 1");
+    rectAnimateColor2.setAttribute("dur", durRect);
+    rectAnimateColor2.setAttribute("from", rectColor2)
+    rectAnimateColor2.setAttribute("to", rectColor1)
+    rect1.appendChild(rectAnimateColor1);
+    rect2.appendChild(rectAnimateColor2);
+    
     var pathcolor = createColor()
     makePath("M " + Math.random()*200 + " " + Math.random()*100 + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " l "+((Math.random()*200)-100) + " "+((Math.random()*200)-100) + " C",pathcolor,pathcolor);
 }
