@@ -8,10 +8,17 @@
 </head>
 
 <body>
-  <h1 style="text-align:center;">Compliment Generator</h1>
+  <h1 style="text-align:center;">Compliment Generator/Komplimento-Kreilo</h1>
   <div class="poem" style="margin-left:auto; margin-right:auto;text-align:center;">
-    <input type="text" id="userInput" placeholder="Your Name">
-    <button onclick="submit()" id="userButton" style="display:block; margin:1em auto;"><span class="nooutline">Compliment Me</span></button>
+    <input type="text" id="userInput" placeholder="Your Name/Vian Nomon">
+    <div id="klavoj" style="display:block;height:2em;padding:0px;margin:1em auto;">
+      <div style="display:inline-block; width:140px; height:2em; margin-right:2px;">
+	<button onclick="submit()" id="userButton" style="width:100%;">Compliment Me</button>
+      </div>
+      <div style="display:inline-block; width:140px; height:2em; margin-left:2px;">
+	<button onclick="submetu()" id="uzistaKlavo" style="width:100%;">Komplimentu Min</button>
+      </div>
+    </div>
     <p id="poemArea"></p>
     <p id="imageContainer"></p>
   </div>
