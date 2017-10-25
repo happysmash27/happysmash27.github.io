@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="compliments.css">
+    <title>
+        Compliment Generator
+    </title>
+</head>
+
+<body>
+  <h1>Compliment Generator</h1>
+  <div class="poem">
+    <input type="text" id="userInput" placeholder="Your Name">
+    <button onclick="submit()">Compliment Me</button>
+    <p id="poemArea"></p>
+    <p id="imageContainer"></p>
+  </div>
+
+<script src="compliments.js"></script>
+</body>
+</html>
