@@ -7,22 +7,32 @@ body{
 }
 
 #userButton{
+    position:relative;
+    left:0px;
+    margin:0px;
     outline-style:none;
+    outline:0;
+    font-weight:bold;
     border:none;
     border-bottom:3px solid;
     border-top:0px solid;
-    border-color:#FFF transparent #07C transparent;
+    border-color:#FFF transparent #cf142b transparent;
     text-align:center;
     padding:5px;
-    background-color:#08D;
+    background-color:#00237d;
     color:#FFF;
 }
 
 #userButton:active{
+    position:relative;
+    left:0px;
+    top:2px;
+    margin:0px;
     outline-style:none;
+    outline:0;
     border-bottom:1px solid;
     border-top:2px solid;
-    border-color:#FFF transparent #07C transparent;
+    border-color:#FFF transparent #cf142b transparent;
     //-webkit-transition: border-bottom 0.25s;
     //transition: border-bottom 0.25s;
     //-webkit-transition: border-top 0.25s;
@@ -34,22 +44,35 @@ body{
 }
 
 #uzistaKlavo{
+    position:relative;
+    left:0px;
+    margin:0px;
     outline-style:none;
+    outline:0;
+    font-weight:bold;
     border:none;
     border-bottom:3px solid;
     border-top:0px solid;
-    border-color:#FFF transparent #07C transparent;
+    margin-top:2px;
+    border-color:#FFF transparent #070 transparent;
     text-align:center;
     padding:5px;
-    background-color:#08D;
+    background-color:#090;
     color:#FFF;
 }
 
 #uzistaKlavo:active{
     outline-style:none;
+    position:relative;
+    left:0px;
+    top:2px;
+    margin:0px;
+    outline-style:none;
+    outline:0;
     border-bottom:1px solid;
     border-top:2px solid;
-    border-color:#FFF transparent #07C transparent;
+    margin-top:0px;
+    border-color:#FFF transparent #080 transparent;
     //-webkit-transition: border-bottom 0.25s;
     //transition: border-bottom 0.25s;
     //-webkit-transition: border-top 0.25s;
@@ -58,6 +81,17 @@ body{
 
 #uzistaKlavo:focus{
     outline-style:none;
+}
+
+button::-moz-focus-inner{
+    border:0;
+}
+
+::-moz-focus-inner{
+    border:0;
+}
+:focus{
+    outline:none;
 }
 
 input{
@@ -83,4 +117,8 @@ input:focus, input:hover{
 #userInput{
     text-align:center;
     width:350px;
+}
+
+.poem{
+    width:360px;
 }
