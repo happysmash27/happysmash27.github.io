@@ -14,7 +14,7 @@ body{
     outline:0;
     font-weight:bold;
     border:none;
-    border-bottom:3px solid;
+    border-bottom:4px solid;
     border-top:0px solid;
     border-color:#FFF transparent #cf142b transparent;
     text-align:center;
@@ -23,15 +23,31 @@ body{
     color:#FFF;
 }
 
+#userButton:focus, #userButton:hover{
+    position:relative;
+    left:0px;
+    top:1px;
+    margin:0px;
+    outline-style:none;
+    outline:0;
+    border-bottom:3px solid;
+    border-top:0px solid;
+    border-color:#FFF transparent #cf142b transparent;
+    //-webkit-transition: border-bottom 0.25s;
+    //transition: border-bottom 0.25s;
+    //-webkit-transition: border-top 0.25s;
+    //transition: border-top 0.25s;
+}
+
 #userButton:active{
     position:relative;
     left:0px;
-    top:2px;
+    top:3px;
     margin:0px;
     outline-style:none;
     outline:0;
     border-bottom:1px solid;
-    border-top:2px solid;
+    border-top:0px solid;
     border-color:#FFF transparent #cf142b transparent;
     //-webkit-transition: border-bottom 0.25s;
     //transition: border-bottom 0.25s;
@@ -47,13 +63,13 @@ body{
     position:relative;
     left:0px;
     margin:0px;
+    top:0px
     outline-style:none;
     outline:0;
     font-weight:bold;
     border:none;
-    border-bottom:3px solid;
+    border-bottom:4px solid;
     border-top:0px solid;
-    margin-top:2px;
     border-color:#FFF transparent #070 transparent;
     text-align:center;
     padding:5px;
@@ -61,16 +77,33 @@ body{
     color:#FFF;
 }
 
+#uzistaKlavo:hover,#uzistaKlavo:focus{
+    outline-style:none;
+    position:relative;
+    left:0px;
+    top:1px;
+    margin:0px;
+    outline-style:none;
+    outline:0;
+    border-bottom:3px solid;
+    border-top:0px solid;
+    border-color:#FFF transparent #080 transparent;
+    //-webkit-transition: border-bottom 0.25s;
+    //transition: border-bottom 0.25s;
+    //-webkit-transition: border-top 0.25s;
+    //transition: border-top 0.25s;
+		   }
+
 #uzistaKlavo:active{
     outline-style:none;
     position:relative;
     left:0px;
-    top:2px;
+    top:3px;
     margin:0px;
     outline-style:none;
     outline:0;
     border-bottom:1px solid;
-    border-top:2px solid;
+    border-top:0px solid;
     margin-top:0px;
     border-color:#FFF transparent #080 transparent;
     //-webkit-transition: border-bottom 0.25s;
@@ -92,6 +125,15 @@ button::-moz-focus-inner{
 }
 :focus{
     outline:none;
+}
+
+button, #klavoj{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
 }
 
 input{
