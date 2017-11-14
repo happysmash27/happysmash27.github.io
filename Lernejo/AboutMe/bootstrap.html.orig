@@ -15,7 +15,11 @@
 	  </div>
 	  <div class="col-xs-10">
 	    <h1>happysmash27</h1>
+<<<<<<< HEAD
 	    <h2>(aka /u/happysmash27, 27)</h2>
+=======
+	    <h2>(aka /u/happysmash27, or 27)</h2>
+>>>>>>> b8f9197... Things
 	  </div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,7 +28,11 @@
 
       <article class="container-fluid">
 	<div class="col-sm-12" style="width:100%; margin:0; padding:0;">
+<<<<<<< HEAD
 	  <p>My username is "happysmash27", and I tend to go by "27", "happysmash27", or "/u/happysmash27" online because of that. I have a veriety of mixed interests, and many many hobbies.</p>
+=======
+	  <p>My username is "happysmash27", and my name is "27", "happysmash27", or "/u/happysmash27" online. I have a veriety of mixed interests, and many many hobbies.</p>
+>>>>>>> b8f9197... Things
 	  <p>Speaking of the <code>/u/</code>, I use Reddit quite a lot. For this reason, it is an incredibly good indication of my interests an personality. I personally use <a href="https://snoopsnoo.com">SnoopSnoo</a> to get insight into <a href="https://snoopsnoo.com/u/happysmash27">my activity</a>.</p>
 	  <h2>Some images that represent me:</h2>
 	  <div class="carousel slide" id="main_carousel">
