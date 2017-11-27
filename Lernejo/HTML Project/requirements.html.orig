@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <title>Requirements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="alia.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1 style="margin:0.25em auto">College Choices</h1>
+	<h2 style="margin:0.25em auto">By happysmash27</h2>
+      </div>
+      <ul class="nav nav-pills novmargin">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="myfuture.html">My Future</a>
+        </li>
+        <li>
+          <a href="whycollege.html">Why College</a>
+        </li>
+        <li class="active">
+          <a href="requirements.html">Requirements</a>
+        </li>
+        <li>
+          <a href="cost.html">Paying For College</a>
+        </li>
+      </ul>
+      
+    </div>
+  </header>
+  <article class="container">
+    <div class="collumn">
+      <div class="row">
+	<h1>College Requirements</h1>
+	<p>For the Technical University of Munich, the following are the requirements for those from the United States with a high school diploma according to <a href="https://www.daad.de/deutschland/nach-deutschland/voraussetzungen/en/57293-daad-database-on-admission-requirements/?id=75&ebene=3">https://www.daad.de/deutschland/nach-deutschland/voraussetzungen/en/57293-daad-database-on-admission-requirements/?id=75&ebene=3</a>:</p>
+	<blockquote>It is obligatory for your High School Diploma*) to be acquired after continuous attendance of the classes 9 to 12 at a US High School and to comprise a total of 16 "academic units" in the forms 9 to 12:<br/>
+	  - 4 units (3 units are sufficient for 11 forms) English with a minimum grade C: English IV or Honors or AP English,<br/>
+	  - 2 units Second Language,<br/>
+	  - 3 units Social Studies,<br/>
+	  5 units in total Mathematics and Science:<br/>
+	  - 2 or 3 units Mathematics with a minimum grade C: Algebra II or Trigonometry and Precalculus,<br/>
+	  - 2 or 3 units Science with a minimum grade C: Biology, Chemistry or Physics,<br/>
+	  - 2 academic units free to choose.</blockquote>
+	<p>The Technical University of Berlin requires an HZB (Higher education entrance qualification) and proof of German language skills according to <a href="http://www.studsek.tu-berlin.de/menue/undergraduate_admission_application_enrollment/with_international_higher_education_entrance_qualification/entry_requirements/parameter/en/">http://www.studsek.tu-berlin.de/menue/undergraduate_admission_application_enrollment/with_international_higher_education_entrance_qualification/entry_requirements/parameter/en/</a>.</p>
+	<p>AIS does not have very clear requirements for those studying there.</p>
+      </div>
+    </div>
+  </article>
+  
+</body>

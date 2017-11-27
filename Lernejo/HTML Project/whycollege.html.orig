@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="alia.css" />
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1 style="margin:0.25em auto">College Choices</h1>
+	<h2 style="margin:0.25em auto">By happysmash27</h2>
+      </div>
+      <ul class="nav nav-pills novmargin">
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="myfuture.html">My Future</a>
+        </li>
+        <li class="active">
+          <a href="whycollege.html">Why College</a>
+        </li>
+        <li>
+          <a href="requirements.html">Requirements</a>
+        </li>
+        <li>
+          <a href="cost.html">Paying For College</a>
+        </li>
+      </ul>
+      
+    </div>
+  </header>
+  <article class="container">
+    <div class="collumn">
+      <div class="row">
+	<h1>Why College?</h1>
+	<p>To be brutally honest, I find that college is mostly important for me because the society I come from finds it important, and my primary motivation for wanting to go there is my desire to learn. Nevertheless, the main advantage for many people is increased salary and job availability. <a href="http://steinhardt.nyu.edu/site/ataglance/2015/07/education-and-mortality-study-finds-less-education-reduces-life-expectancy.html">This can come with increased life expectancy as well</a>. I personally find college economically important because most of the jobs I am looking into are much easier to get with a degree, although with certain jobs such as many involving computers, it <i>is</i> actually possible to get a job with merit alone at some places, and I'm sure that with most jobs at least one company might hire based on merit rather than having the money for a degree.</p>
+	<p>Some pretty good salary data can be found <a href="http://www.randford.org/salarysurvey.htm">at radford.org</a> and <a href="http://work.chron.com/average-salary-college-degree-1861.html">at this article at chron.com</a>. In both of these links, one can see that college, on average, pays at least $100 more per week per degree increase, and over $10000 per degree increase when one looks at yearly data. However, <a href="https://www.forbes.com/2003/07/28/cx_dd_0728mondaymatch.html">according to Forbes</a> and <a href="http://www.zerohedge.com/news/2014-05-18/net-worth-college-grads-student-debt-20-less-high-school-grads-no-debt">according to ZeroHedge</a>, college can decrease net worth, and according to <a href="http://www.slate.com/blogs/moneybox/2014/09/08/college_graduate_vs_high_school_graduate_salaries.html">slate.com</a>, if one is in the 25<sup>th</sup> percentile with a bachelor's degree, they have about the same earnings as one with a high school degree, meaning that they would be better off in terms of net worth. For this reason, it may be advised that not everyone should go to college.</p>
+	<p>However, I have a rather simple plan to get the full benefits rather than being buried in dept and having a greatly reduced net worth: moving to a country with free college, such as Germany. That totally beets millitary college, since I hate the military and plan on renouncing my US citizenship when I turn 18 anyway. More detail can be found <a href="myfuture.html">here</a>.</p>
+      </div>
+    </div>
+  </article>
+  
+</body>
