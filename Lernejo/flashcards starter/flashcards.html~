@@ -8,8 +8,8 @@
 <body>
     <h1>Flash Cards: State Capitals</h1>
     <h2 id="flash-card"></h2>
-    <button onclick="showAnswer()" id="ŝanĝadaButono" style="display:none; visibility:hidden;">Show Answer</button>
-    <button onclick="newCard()">Next</button>
+    <button onclick="showAnswer()" id="ŝanĝadaButono" style="visibility:hidden;">Show Answer</button>
+    <button onclick="newCard()" style="right:0;">Next</button>
     
     <script src="flash_cards.js"></script>
 </body>
