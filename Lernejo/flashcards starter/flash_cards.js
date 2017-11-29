@@ -1,4 +1,4 @@
-var kartoj = [{demando: "Kio estas bovino?", respondo: "Ina bovo"}, {demando: "Kion bovino diras?", respondo: "Mu"}, {demando: "Kion bovinoj produktas?", respondo: "Lakton"}, {demando: "Kion bovinoj manĝas?", respondo: "Herbon"}];
+var kartoj = [{demando: "Input Device", respondo: "In computing, an input device is a piece of computer hardware equipment used to provide data and control signals to an information processing system such as a computer or information appliance. Examples of input devices include keyboards, mouse, scanners, digital cameras and joysticks."}, {demando: "Output Device", respondo: "In computing, an output device is a piece of computer hardware equipment that uses recieved data and commands from an information processing system (such as a computer or information appliance) in order to perform a task."}, {demando: "Kion bovinoj produktas?", respondo: "Lakton"}, {demando: "Kion bovinoj manĝas?", respondo: "Herbon"}];
 
 var demandmontrilo = kartoj.length-1;
 
