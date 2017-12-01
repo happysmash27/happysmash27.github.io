@@ -49,6 +49,7 @@ h2 {
     margin:0;
     width:100%;
     text-align:center;
+    font-weight:normal;
 }
 
 button {
@@ -59,4 +60,8 @@ button {
     margin-right: 30px;
     background-color: lightcoral;
     color: white;
+}
+
+b {
+    font-weight:bold;
 }

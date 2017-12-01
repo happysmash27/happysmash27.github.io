@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Demo</title>
+  <head>
+    <title>Demo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Patua+One" rel="stylesheet">
-</head>
-<body>
+    <meta charset="utf-8">
+  </head>
+  <body>
     <h1>Flash Cards: State Capitals</h1>
-    <h2 id="flash-card"></h2>
-    <button onclick="showAnswer()" id="ŝanĝadaButono" style="visibility:hidden;">Show Answer</button>
-    <button onclick="newCard()" style="right:0;">Next</button>
+    <div id="flash-card-div">
+      <h2 id="flash-card"></h2>
+    </div>
+    <button onclick="showAnswer()" id="ŝanĝadaButono" style="display:none; visibility:hidden;">Show Answer</button>
+    <button onclick="newCard()">Next</button>
     
     <script src="flash_cards.js"></script>
-</body>
+  </body>
 </html>
