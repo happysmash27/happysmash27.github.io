@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <h2> JavaScript Loops Example</h2>
+    <p id="answer"> </p>
+    <script>
+      var scores = [24, 32, 17];
+      var msg = " ";
+      for (var i = 0; i < scores.length; i++) {
+		      msg += "Round " + (i+1) + ": " + scores[i] + "<br>";
+      }
+      document.getElementById("answer").innerHTML = msg;
+    </script>
+  </body>
+</html>
