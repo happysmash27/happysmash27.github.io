@@ -7,6 +7,12 @@ body{
     text-align:center;
 }
 
+table{
+    text-align:center;
+    position:relative;
+    margin: 2em auto;
+}
+
 button{
     position:relative;
     height:25px;

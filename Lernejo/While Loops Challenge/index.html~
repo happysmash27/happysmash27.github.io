@@ -11,6 +11,7 @@
     <input id="viaNumbro" type="text" placeholder="Your Number" autocomplete="off">
     <input id="alKiuNumbro" type="text" placeholder="Up to what number?" autocomplete="off">
     <button onclick="multiply" name="Answer">Answer</button>
+    <p id="respondo"></p>
     <script src="index.js"></script>
   </body>
 </html>
