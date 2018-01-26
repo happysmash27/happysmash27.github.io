@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Word Guesser</title>
+    <title class="titolo">Word Guesser</title>
     <link href="index.css" rel="stylesheet">
   </head>
   <body>
+    <h1 class="titolo">Word Guesser</h1>
+    <p id="guessedLetters"></p>
+    <input id="letterGuess" type="text" placeholder="Guess Your Letter" autocomplete="off">
+    <button onclick='guessLetter(document.getElementById("letterGuess").value)' name="Answer">Answer</button>
+    <p id="uzantaMesaĝo"></p>
     <script src="index.js"></script>
   </body>
 </html>

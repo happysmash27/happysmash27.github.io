@@ -1,3 +1,4 @@
+var lingvo = navigator.language;
 var vortLeteroj = [];
 vortLeteroj = ["F", "O", "F", "A"]
 var guessedLetters = [];
@@ -40,14 +41,29 @@ function guessLetter(guessedLetter){
     }
     console.log(guessedLetters);
     if (novaLeteroTrovita){
-	var uzantaMesaĝo = "Gratulojn! Vi trovis novan Leteron! ";
+	if (lingvo == "en"){
+	    var uzantaMesaĝo = "Congratulations! You found a new letter! ";
+	} else {
+	    var uzantaMesaĝo = "Gratulojn! Vi trovis novan Leteron! ";
+	}
 	if (!pliDaLeterojPorDiveni){
-	    uzantaMesaĝo += "Kaj pli grave, vi venkis!";
+	    if (lingvo == "en"){
+		uzantaMesaĝo += "And more importantly, you won!";
+	    } else {
+		uzantaMesaĝo += "Kaj pli grave, vi venkis!";
+	    }
 	}
     } else {
-	var uzantaMesaĝo = "Bedaŭrinde, tiu letero ne estas en la vorto :( ";
+	if (lingvo == "en"){
+	    var uzantaMesaĝo = "Oh no! That's not right!";
+	} else {
+	    var uzantaMesaĝo = "Bedaŭrinde, tiu letero ne estas en la vorto :( ";
+	}
     }
     document.getElementById("uzantaMesaĝo").innerHTML = uzantaMesaĝo;
 }
 
 
+console.log(window.navigator.language);
+console.log(navigator.language)
+console.log(navigator.userLanguage)
