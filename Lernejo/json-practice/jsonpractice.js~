@@ -1,0 +1,12 @@
+// PROBLEM ONE //
+
+document.getElementById("answer-one").innerHTML = luke.birth_year
+
+
+// PROBLEM TWO //
+
+document.getElementById("answer-two").innerHTML += jurassicpark.Genre + "</br>"
+
+document.getElementById("answer-two").innerHTML += picnic.Year + "</br>"
+
+document.getElementById("answer-two").innerHTML += theredshoes.Ratings[1].Value + "</br>"

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Fredoka+One|Nosifer');
+
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+h1 {
+    font-family: "Fredoka One";
+    font-size: 60px;
+    color: #ffeb5b;
+    text-shadow: 2px 2px #c45938;
+    background-image: url("lilies.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Cabin";
+    color: #3e65d8;
+}
+
+p, ul, li {
+    font-family: sans-serif;
+    color: #3e65d8;
+}
+
+span {
+    color: #864cad;
+}
+
+.prob-purple span {
+  color: #d0b0e5;
+}
+
+button {
+    background-color: #5CCA68;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div {
+    padding: 30px 25% 30px 25%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px pink solid;
+}
+
+.prob-purple {
+  background-color: #3e65d8;
+}
+
+.prob-purple h2, .prob-purple p, .prob-purple ul, .prob-purple li {
+  color: white;
+}
+
+.ans {
+  background-color: rgba(165, 255, 234, 0.6);
+  border: 3px solid #418e7c;
+  border-radius: 10px;
+  color: #3e65d8 !important;
+}
