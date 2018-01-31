@@ -46,3 +46,41 @@ document.getElementById("answer-six").innerHTML += petersburg[0].Temperature.Imp
 document.getElementById("answer-six").innerHTML += petersburg[0].WeatherText + "</br>"
 
 document.getElementById("answer-six").innerHTML += edinburgh[0].WeatherText + "</br>"
+
+// PROBLEM SEVEN //
+
+document.getElementById("answer-seven").innerHTML += freebandnames.statuses[0].entities.hashtags[0].indices + "</br>"
+
+document.getElementById("answer-seven").innerHTML += freebandnames.statuses[0].user.name + "</br>"
+
+for (i in freebandnames.statuses){
+    console.log(i)
+    document.getElementById("answer-seven").innerHTML += freebandnames.statuses[i].user.time_zone + "</br>"
+}
+
+// PROBLEM EIGHT //
+
+document.getElementById("answer-eight").innerHTML += quiz.quiz.maths.q1.answer + "</br>"
+
+document.getElementById("answer-eight").innerHTML += quiz.quiz.sport.q1.answer + "</br>"
+
+// PROBLEM NINE //
+
+document.getElementById("answer-nine").innerHTML += wartortle.abilities[0].ability.name + "</br>"
+
+document.getElementById("answer-nine").innerHTML += charmander.stats[2].stat.name + "</br>"
+
+document.getElementById("answer-nine").innerHTML += charmander.stats.length + "</br>"
+
+// PROBLEM TEN //
+
+document.getElementById("answer-ten").innerHTML += nov5.data.Events[0].text + "</br>"
+
+console.log("jkl".indexOf("kl"))
+
+for (i in nov5.data.Births){
+    if (nov5.data.Births[i].year == 1992 && nov5.data.Births[i].text.indexOf("football player")>=0){
+	document.getElementById("answer-ten").innerHTML += nov5.data.Births[i].text + "</br>"
+    }
+}
+
