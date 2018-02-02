@@ -1,0 +1,15 @@
+function displayQuakes(data) {
+// this is your "SUCESS FUNCTION"
+// this is where you will access and display the returned JSON information
+
+}
+
+
+function getAJAX() {
+  $.ajax({
+    url: // what goes here?
+    success: function(data) {
+      // what goes here?
+    }
+  })
+}
