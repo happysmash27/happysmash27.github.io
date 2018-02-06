@@ -2,9 +2,9 @@ function displayQuakes(data) {
 // this is your "SUCESS FUNCTION"
 // this is where you will access and display the returned JSON information
 
+    document.getElementById("earthquakelist").innerHTML = "";
     for (var i=0; i<3; i++){
-	document.getElementById("earthquakelist").innerHTML+=data.features[i].properties.mag + ", " + data.features[i].properties.place
-	console.log(data.features[i].properties.mag + ", " + data.features[i].properties.place)
+	document.getElementById("earthquakelist").innerHTML += "Magnitude " + data.features[i].properties.mag + ", " + data.features[i].properties.place + "<br/>";
     }
 }
 
