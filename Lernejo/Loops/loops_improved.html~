@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <h2> JavaScript Loops Example</h2>
+    <p id="answer"> </p>
+    <script>
+      var scores = [24, 32, 17];
+      var arrayLength = scores.length;
+      var roundNumber = 0;
+      var msg = " ";
+      var i;
+      for (i = 0; i < arrayLength; i++) {
+		      // Arrays are zero based (so 0 is round 1)
+		      //Add 1 to the current round
+		      roundNumber = (i + 1);
+		      msg += "Round " + roundNumber + ": ";
+
+		      //Get the score from the scores array
+		      msg += scores[i] + "<br>";
+      }
+      document.getElementById("answer").innerHTML = msg;
+    </script>
+  </body>
+</html>

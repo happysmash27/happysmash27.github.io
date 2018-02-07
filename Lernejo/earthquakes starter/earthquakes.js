@@ -1,3 +1,17 @@
+lingvo = navigator.language
+
+if (lingvo === "en"){
+    for (i in document.getElementsByClassName("titolo")){
+	document.getElementsByClassName("titolo")[i].innerHTML = "Earthquakes";
+    }
+    document.getElementById("earthquakeButton").innerHTML = "Earthquakes"
+} else {
+    for (i in document.getElementsByClassName("titolo")){
+	document.getElementsByClassName("titolo")[i].innerHTML = "Tertremoj";
+    }
+    document.getElementById("earthquakeButton").innerHTML = "Tertremoj"
+}
+
 function displayQuakes(data) {
 // this is your "SUCESS FUNCTION"
 // this is where you will access and display the returned JSON information
@@ -15,8 +29,10 @@ function getAJAX() {
 	url: 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson', // what goes here?
 	success: function(data) {
 	    displayQuakes(data); // what goes here?
-	}//,
-	//type: "GET"
+	},
+	error: function(){
+	    document.getElementById("earthquakelist").innerHTML = "Ne povis akiri datumon el earthquake.usgs.gov. Ĉu vi ebligis skriptojn de ĝi? Se ne, bonvolu ebligi tiun domajnon en via skriptblokilo. NoScript montras nur usgs.gov, kaj ebligi ĝin funkcias bone en si.";
+	}
     })
 }
 
