@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo|Lato|Slabo+27px');
+
+#todaysdate {
+  font-family: 'Macondo', cursive;
+  font-size: 30px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 10px;
+  height: 70px;
+  width: 250px;
+  font-family: 'Macondo', cursive;
+  font-size: 18px;
+  background: #6a5acd;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow: 1px 1px #666;
+  transition: background 0.2s;
+  -webkit-transition: background 0.2s;
+}
+
+.flex-container-top button {
+    background: #958adb;
+}
+
+button:hover, button:focus {
+    background: #fa5acd;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+}
+
+.flex-container-top button:hover, button:focus {
+    background: #604fc9;
+    transition: background 0.2s;
+    -webkit-transition: background 0.2s;
+}
+
+button:active {
+    background: #8376d5;
+}
+
+.flex-container-top button:active{
+    background: #1f184e;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    background-color: slateblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.flex-container-top {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    background-color: slateblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.flex-item {
+    background-color: azure;
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.flex-top-item {
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+}

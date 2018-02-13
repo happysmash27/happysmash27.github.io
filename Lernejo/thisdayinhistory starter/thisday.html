@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="thisday.css">
+    <title>
+        This Day In History
+    </title>
+</head>
+
+<body>
+
+
+<button onclick="getAJAX()">What happened today?</button>
+<span id="todaysdate"></span>
+
+<div class="flex-container-top">
+  <button onclick="getAJAXevents()" class="flex-top-item">What events happened today?</button>
+  <button onclick="getAJAXbirths()" class="flex-top-item">What births happened today?</button>
+  <button onclick="getAJAXdeaths()" class="flex-top-item">What deaths happened today?</button>
+</div>
+
+<div class="flex-container">
+  <div class="flex-item" id="events"><h2>Events</h2></div>
+  <div class="flex-item" id="births"><h2>Births</h2></div>
+  <div class="flex-item" id="deaths"><h2>Deaths</h2></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="utility.js"></script>
+<script src="thisday.js"></script>
+</body>
+</html>
