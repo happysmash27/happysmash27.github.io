@@ -20,8 +20,10 @@ function displayQuakes(data) {
 
     document.getElementById("earthquakelist").innerHTML = "";
     for (var i=0; i<3; i++){
-	var date = new Date(data.features[i].properties.time);
-	document.getElementById("earthquakelist").innerHTML += "Magnitude " + data.features[i].properties.mag + ", " + data.features[i].properties.place + " at " + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "<br/>";
+	if (data.features[i] != null) {
+	    var date = new Date(data.features[i].properties.time);
+	    document.getElementById("earthquakelist").innerHTML += "Magnitude " + data.features[i].properties.mag + ", " + data.features[i].properties.place + " at " + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "<br/>";
+	}
     }
 }
 
@@ -31,8 +33,10 @@ function displayQuakes2(data) {
 
     document.getElementById("earthquakelist").innerHTML = "";
     for (var i=0; i<500; i++){
-	var date = new Date(data.features[i].properties.time);
-	document.getElementById("earthquakelist").innerHTML += "Magnitude " + data.features[i].properties.mag + ", " + data.features[i].properties.place + " at " + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "<br/>";
+	if (data.features[i] != null) {
+	    var date = new Date(data.features[i].properties.time);
+	    document.getElementById("earthquakelist").innerHTML += "Magnitude " + data.features[i].properties.mag + ", " + data.features[i].properties.place + " at " + date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "<br/>";
+	}
     }
 }
 

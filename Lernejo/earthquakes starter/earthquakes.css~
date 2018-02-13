@@ -46,7 +46,7 @@ button {
   margin: 10px;
   padding: 10px 10px;
   height: 70px;
-  width: 250px;
+  width: 120px;
   font-family: 'Macondo', cursive;
   font-size: 18px;
   background: #6a5acd;
