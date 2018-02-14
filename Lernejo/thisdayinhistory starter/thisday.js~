@@ -7,10 +7,13 @@ function randomNumber(min,max) {
 
 function getAJAX() {
   $.ajax({
-    url: // what goes here?
+    url: 'http://history.muffinlabs.com/date' // what goes here?
     dataType: 'jsonp',
     success: function(data) {
-      // what goes here?
+	// what goes here?
+	for (var i = 0; i<3; i++){
+
+	}
     }
   })
 }
