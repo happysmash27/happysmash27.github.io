@@ -37,7 +37,7 @@ function getAJAXevents() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Events</h2>";
-	    var uzatajJoj = [];
+	    var uzatajJoj = [null, null, null, null, null];
 	    for (var i = 0; i<5; i++){
 		if (data.data.Events.length>=5){
 		    var bonaJo = false;
@@ -49,7 +49,14 @@ function getAJAXevents() {
 				bonaJo = false;
 			    }
 			}
+			//if (bonaJo === false){
+			//    console.log("uzatajJoj: " + uzatajJoj);
+			//    console.log("j: " + j);
+			//    console.log("bonaJo estas: " + bonaJo);
+			//    console.log("bonaJo === false");
+			//}
 		    }
+		    uzatajJoj[i] = j;
 		} else {
 		    var j = Math.floor(Math.random()*data.data.Events.length);
 		}
@@ -81,7 +88,7 @@ function getAJAXbirths() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Births</h2>";
-	    var uzatajJoj = [];
+	    var uzatajJoj = [null, null, null, null, null];
 	    for (var i = 0; i<5; i++){
 		if (data.data.Births.length>=5){
 		    var bonaJo = false;
@@ -94,6 +101,7 @@ function getAJAXbirths() {
 			    }
 			}
 		    }
+		    uzatajJoj[i] = j;
 		} else {
 		    var j = Math.floor(Math.random()*data.data.Births.length);
 		}
@@ -125,7 +133,7 @@ function getAJAXdeaths() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Deaths</h2>";
-	    var uzatajJoj = [];
+	    var uzatajJoj = [null, null, null, null, null];
 	    for (var i = 0; i<5; i++){
 		if (data.data.Deaths.length>=5){
 		    var bonaJo = false;
@@ -138,6 +146,7 @@ function getAJAXdeaths() {
 			    }
 			}
 		    }
+		    uzatajJoj[i] = j;
 		} else {
 		    var j = Math.floor(Math.random()*data.data.Deaths.length);
 		}
