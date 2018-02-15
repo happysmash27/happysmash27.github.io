@@ -114,9 +114,9 @@ function getAJAXbirths() {
 		    readMoreLinks += "<a href=\"" + data.data.Births[j].links[k].link + "\">" + data.data.Births[j].links[k].title + "</a>";
 		}
 		if (readMoreLinks && readMoreLinks !== " " && readMoreLinks !== null){
-		    readMoreLinksMessage = " Read more: " + readMoreLinks + ".";
+		    readMoreLinksMessage = ". Read more: " + readMoreLinks + ".";
 		} else {
-		    readMoreLinksMessage = " ";
+		    readMoreLinksMessage = ". ";
 		}
 	        msg += data.data.Births[j].year + " — " + data.data.Births[j].text + readMoreLinksMessage + "<br>";
 		readMoreLinksMessage, readMoreLinks = null
@@ -159,9 +159,9 @@ function getAJAXdeaths() {
 		    readMoreLinks += "<a href=\"" + data.data.Deaths[j].links[k].link + "\">" + data.data.Deaths[j].links[k].title + "</a>";
 		}
 		if (readMoreLinks && readMoreLinks !== " " && readMoreLinks !== null){
-		    readMoreLinksMessage = " Read more: " + readMoreLinks + ".";
+		    readMoreLinksMessage = ". Read more: " + readMoreLinks + ".";
 		} else {
-		    readMoreLinksMessage = " ";
+		    readMoreLinksMessage = ". ";
 		}
 	        msg += data.data.Deaths[j].year + " — " + data.data.Deaths[j].text + readMoreLinksMessage + "<br>";
 		readMoreLinksMessage, readMoreLinks = null
