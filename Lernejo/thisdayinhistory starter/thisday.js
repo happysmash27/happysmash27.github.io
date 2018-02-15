@@ -37,8 +37,22 @@ function getAJAXevents() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Events</h2>";
+	    var uzatajJoj = [];
 	    for (var i = 0; i<5; i++){
-		var j = Math.floor(Math.random()*data.data.Events.length);
+		if (data.data.Events.length>=5){
+		    var bonaJo = false;
+		    while (bonaJo === false){
+			var j = Math.floor(Math.random()*data.data.Events.length);
+			bonaJo = true;
+			for (var l in uzatajJoj){
+			    if (uzatajJoj[l] === j){
+				bonaJo = false;
+			    }
+			}
+		    }
+		} else {
+		    var j = Math.floor(Math.random()*data.data.Events.length);
+		}
 		for (var k in data.data.Events[j].links){
 		    if (typeof readMoreLinks !== "undefined" && readMoreLinks !== null){
 			readMoreLinks += ", ";
@@ -67,8 +81,22 @@ function getAJAXbirths() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Births</h2>";
+	    var uzatajJoj = [];
 	    for (var i = 0; i<5; i++){
-		var j = Math.floor(Math.random()*data.data.Births.length);
+		if (data.data.Births.length>=5){
+		    var bonaJo = false;
+		    while (bonaJo === false){
+			var j = Math.floor(Math.random()*data.data.Births.length);
+			bonaJo = true;
+			for (var l in uzatajJoj){
+			    if (uzatajJoj[l] === j){
+				bonaJo = false;
+			    }
+			}
+		    }
+		} else {
+		    var j = Math.floor(Math.random()*data.data.Births.length);
+		}
 		for (var k in data.data.Births[j].links){
 		    if (typeof readMoreLinks !== "undefined" && readMoreLinks !== null){
 			readMoreLinks += ", ";
@@ -97,8 +125,22 @@ function getAJAXdeaths() {
 	success: function(data) {
 	    // what goes here?
 	    var msg = "<h2>Deaths</h2>";
+	    var uzatajJoj = [];
 	    for (var i = 0; i<5; i++){
-		var j = Math.floor(Math.random()*data.data.Deaths.length);
+		if (data.data.Deaths.length>=5){
+		    var bonaJo = false;
+		    while (bonaJo === false){
+			var j = Math.floor(Math.random()*data.data.Deaths.length);
+			bonaJo = true;
+			for (var l in uzatajJoj){
+			    if (uzatajJoj[l] === j){
+				bonaJo = false;
+			    }
+			}
+		    }
+		} else {
+		    var j = Math.floor(Math.random()*data.data.Deaths.length);
+		}
 		for (var k in data.data.Deaths[j].links){
 		    if (typeof readMoreLinks !== "undefined" && readMoreLinks !== null){
 			readMoreLinks += ", ";
