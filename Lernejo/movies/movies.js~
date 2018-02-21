@@ -1,0 +1,12 @@
+function showMovieInfo(data) {
+  // success function: what goes here?
+}
+
+function makeRequest() {
+  $.ajax({
+    url: // what goes here?
+    success: function(data) {
+      // what goes here?
+    }
+  })
+}
