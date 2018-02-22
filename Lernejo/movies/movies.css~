@@ -1,52 +1,137 @@
-@import url('https://fonts.googleapis.com/css?family=Macondo|Poppins|Slabo+27px|Open+Sans|Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese');
 
-body {
-    text-align: center;
-    margin: 0px;
-    background-image: url("images/galaxy.jpg");
-    background-size: cover;
+html {
+    font-family:Noto Sans, sans-serif;
+    padding:0px;
+    margin:0px;
 }
 
-h1 {
-    font-family: "Russo One";
-    font-size: 72px;
-    color: #f8b5ff;
-    text-shadow: 2px 2px #4082e5;
-    background-position: center;
-    background-size: cover;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0px;
+body{
+    text-align:center;
+    background-color:#fff;
+    padding:0px;
+    margin:0px;
 }
 
-.main {
-  background-color: rgba(34, 55, 71, 0.8);
-  border-radius: 25px;
-  margin-left: 25%;
-  margin-right: 25%;
-  min-height: 250px;
-  padding: 25px;
-  color: #add4ff;
-  font-family: "Poppins";
-  font-size: 16px;
+header{
+    background-color:#4e3cc3;
+    margin:0px;
+    padding:1px 10px 10px;
+    border:none;
+    border-bottom:solid;
+    border-color:#fe3cc3;
 }
 
-button {
-    background-color: #ad27bc;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    margin: 10px;
+.titolo{
+    font-size:2.8em;
+    margin:0px auto 0.2em;
 }
 
-input {
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 350px;
+h1, h2, h3, h4, h5, h6, p {
+    color:#fff;
 }
 
-span {
-  color: #da77ff;
+button{
+    position:relative;
+    height:25px;
+    left:0px;
+    margin:0px;
+    top:0px
+    outline-style:none;
+    outline:0;
+    font-weight:bold;
+    border:none;
+    border-bottom:4px solid;
+    border-top:0px solid;
+    border-color:#FFF transparent #077 transparent;
+    text-align:center;
+    padding:4px 5px;
+    //padding:5px;
+    background-color:#099;
+    color:#FFF;
+}
+
+button:hover,button:focus{
+    outline-style:none;
+    position:relative;
+    height:24px;
+    left:0px;
+    top:1px;
+    margin:0px;
+    outline-style:none;
+    outline:0;
+    border-bottom:3px solid;
+    border-top:0px solid;
+    border-color:#FFF transparent #088 transparent;
+    //-webkit-transition: border-bottom 0.25s;
+    //transition: border-bottom 0.25s;
+    //-webkit-transition: border-top 0.25s;
+    //transition: border-top 0.25s;
+		   }
+
+button:active{
+    outline-style:none;
+    position:relative;
+    height:22px;
+    left:0px;
+    top:3px;
+    margin:0px;
+    outline-style:none;
+    outline:0;
+    border-bottom:1px solid;
+    border-top:0px solid;
+    margin-top:0px;
+    border-color:#FFF transparent #088 transparent;
+    //-webkit-transition: border-bottom 0.25s;
+    //transition: border-bottom 0.25s;
+    //-webkit-transition: border-top 0.25s;
+    //transition: border-top 0.25s;
+}
+
+button:focus{
+    outline-style:none;
+}
+
+button::-moz-focus-inner{
+    border:0;
+}
+
+::-moz-focus-inner{
+    border:0;
+}
+:focus{
+    outline:none;
+}
+
+button{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+input{
+    //height:1em;
+    font-size:1em;
+    border-radius:2px;
+    border-color:#000;
+    border: 1px solid;
+    border:none;
+    //background-color:rgba(255, 255, 255, 0.8);
+    background-color:#3e309c;
+    color:#eee;
+    padding:5px;
+    outline:none;
+    box-shadow:none;
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
+}
+
+input:focus, input:hover{
+    //background-color:rgba(255, 255, 255, 0.9);
+    background-color:#5e509c;
+    -webkit-transition: background-color 0.25s;
+    transition: background-color 0.25s;
 }
