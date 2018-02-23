@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <link rel="stylesheet" href="movies.css">
-    <title>
-        Movies Lookup
+    <title class="titolo">
+      Movies Lookup
     </title>
-</head>
+  </head>
 
-<body>
-<h1>Movie Lookup</h1>
+  <body>
+    <header>
+      <h1 class="titolo">Movie Lookup</h1>
+      <input type="text" name="movietitle" id="movietitle" placeholder="Movie Title">
+      <button onclick="makeRequest()">Movie Lookup</button>
+    </header>
+    <article id="movieinfo">
+    </article>
 
-<div class="main">
-  <input type="text" name="movietitle" id="movietitle" placeholder="Movie Title">
-  <button onclick="makeRequest()">Movie Lookup</button>
-
-  <div id="movieinfo">
-  </div>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="movies.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="movies.js"></script>
+  </body>
 </html>

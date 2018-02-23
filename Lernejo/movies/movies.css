@@ -31,12 +31,28 @@ h1, h2, h3, h4, h5, h6, p {
     color:#fff;
 }
 
+.sendujo {
+    display:block;
+    height:40px;
+    overflow:auto;
+    padding:0px;
+    margin:0px auto 0.2em;
+}
+
+.sendaĵo {
+    display:inline-block;
+    overflow:auto;
+    height:2em;
+}
+
 button{
-    font-size:1em;
+    //font-size:1em;
     position:relative;
     height:27px;
+    //height:32px;
     left:0px;
     margin:0px;
+    //margin-top:-5px;
     top:0px
     outline-style:none;
     outline:0;
@@ -115,6 +131,7 @@ button{
 
 input{
     //height:1em;
+    //margin-top:2px;
     font-size:1em;
     border-radius:2px;
     border-color:#000;
