@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin:0px auto 0.2em;
 }
 
-.sendaĵo {
+.sendaÄµo {
     display:inline-block;
     overflow:auto;
     height:2em;
@@ -72,8 +72,8 @@ button{
     left:0px;
     margin:0px;
     //margin-top:-5px;
-    //top:0px;
-    outline-style:none;
+    top:0px
+	    outline-style:none;
     outline:0;
     font-weight:bold;
     border:none;
@@ -88,22 +88,22 @@ button{
 }
 
 button:hover,button:focus{
-    outline-style:none;
-    position:relative;
-    height:26px;
-    left:0px;
-    top:1px;
-    margin:0px;
-    outline-style:none;
-    outline:0;
-    border-bottom:3px solid;
-    border-top:0px solid;
-    border-color:#FFF transparent #088 transparent;
-    //-webkit-transition: border-bottom 0.25s;
-    //transition: border-bottom 0.25s;
-    //-webkit-transition: border-top 0.25s;
-    //transition: border-top 0.25s;
-}
+		 outline-style:none;
+		 position:relative;
+		 height:26px;
+		 left:0px;
+		 top:1px;
+		 margin:0px;
+		 outline-style:none;
+		 outline:0;
+		 border-bottom:3px solid;
+		 border-top:0px solid;
+		 border-color:#FFF transparent #088 transparent;
+		 //-webkit-transition: border-bottom 0.25s;
+		 //transition: border-bottom 0.25s;
+		 //-webkit-transition: border-top 0.25s;
+		 //transition: border-top 0.25s;
+	     }
 
 button:active{
     outline-style:none;
@@ -167,8 +167,8 @@ input{
 }
 
 input:focus, input:hover{
-    //background-color:rgba(255, 255, 255, 0.9);
-    background-color:#3f3d9c;
-    -webkit-transition: background-color 0.25s;
-    transition: background-color 0.25s;
-}
+		 //background-color:rgba(255, 255, 255, 0.9);
+		 background-color:#3f3d9c;
+		 -webkit-transition: background-color 0.25s;
+		 transition: background-color 0.25s;
+	     }

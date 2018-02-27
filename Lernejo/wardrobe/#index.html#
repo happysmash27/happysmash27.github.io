@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="wardrobe.css">
+    <title>
+        Weather Wardrobe
+    </title>
+</head>
+
+<body>
+<h1>Wardrobe Advisor</h1>
+
+<div class="main">
+  <div class="sendujo">
+  <input type="text" id="zipcode" placeholder="City name or zipcode">
+  <button>Outfit!</button>
+
+  <div id="outfit">
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="wardrobe.js"></script>
+</body>
+</html>
