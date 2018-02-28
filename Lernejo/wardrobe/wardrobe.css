@@ -12,6 +12,12 @@ html, body {
     margin:0px auto 0.2em;
 }
 
+.sendaĵo {
+    display:inline-block;
+    overflow:auto;
+    height:2em;
+}
+
 button{
     //font-size:1em;
     position:relative;

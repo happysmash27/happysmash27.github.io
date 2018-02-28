@@ -1,4 +1,23 @@
-
+var lingvo = navigator.language;
+if (lingvo === "eo"){
+    for (i in document.getElementsByClassName("titolo")){
+	document.getElementsByClassName("titolo")[i].innerHTML = "Veter-bazita Vestaĵkonsilanto";
+    }
+    document.getElementById("zipcode").placeholder = "Nomo de la urbo, poŝtkodo, latitudo kaj longitudo, aŭ IP-adreso";
+    document.getElementById("submetu").innerHTML = "Konsili Min!";
+} else if (lingvo === "en") {
+    for (i in document.getElementsByClassName("titolo")){
+	document.getElementsByClassName("titolo")[i].innerHTML = "Weather-based Outfit Advisor";
+    }
+    document.getElementById("zipcode").placeholder = "City name or postal code";
+    document.getElementById("submetu").innerHTML = "Advise Me!";
+} else {
+    for (i in document.getElementsByClassName("titolo")){
+	document.getElementsByClassName("titolo")[i].innerHTML = "Veter-bazita Vestaĵkonsilanto";
+    }
+    document.getElementById("zipcode").placeholder = "Nomo de la urbo, poŝtkodo, latitudo kaj longitudo, aŭ IP-adreso";
+    document.getElementById("submetu").innerHTML = "Konsili Min!";
+}
 
 function makeRequest() {
     $.ajax({
