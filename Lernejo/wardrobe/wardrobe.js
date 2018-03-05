@@ -21,27 +21,135 @@ if (lingvo === "eo"){
 }
 
 function makeRequest() {
+    console.log("makeRequest()");
+    console.log("https://api.apixu.com/v1/current.json?key=6dffcf5b16b24d87bd7191244182602&q=" + document.getElementById("zipcode").value);
     $.ajax({
-	url: "https://api.apixu.com/v1/current.json?key=6dffcf5b16b24d87bd7191244182602&q=" + document.getElementById("zipcode"), // what goes here?
+	url: "https://api.apixu.com/v1/current.json?key=6dffcf5b16b24d87bd7191244182602&q=" + document.getElementById("zipcode").value, // what goes here?
 	success: function(data) {
 	    // what goes here?
+	    console.log("success");
+	    var outfitdiv = document.getElementById("outfit");
+	    while (outfitdiv.firstChild) {
+		outfitdiv.removeChild(outfitdiv.firstChild);
+	    }
+	    outfitdiv.style="display:flex; flex-direction: column;";
 	    var lokoNomo = document.createElement("h2");
 	    lokoNomo.innerHTML = data.location.name + ", " + data.location.region + ", " + data.location.country;
-	    //var temp_c_teksto = document.createElement("h2");
-	    //temp_c_teksto.innerHTML = data.current.temp_c + "°C";
-	    //var veterIkono = document.createElement("img");
-	    //veterIkono.src = data.current.condition.icon;
-	    //var temp_f_teksto = document.createElement("h2");
-	    //temp_f_teksto.innerHTML = data.current.temp_f + "°F";
-	    var veter_temp_ikono = data.current.temp_c + "°C" + "img src=\"" + data.current.condition.icon + "\">" + data.current.temp_f + "°F";
-	    veter_temp_ikono.style = "font-size: 64px;";
-	    var vetero = document.createElement("h2");
+	    var temp_c_teksto = document.createElement("h2");
+	    temp_c_teksto.innerHTML = data.current.temp_c + "°C";
+	    temp_c_teksto.style="font-size:32px; margin-top:8px; margin-bottom:0px;"
+	    var veterIkono = document.createElement("img");
+	    veterIkono.src = "https:" + data.current.condition.icon;
+	    veterIkono.style = "width:64px; height:64px;";
+	    var temp_f_teksto = document.createElement("h2");
+	    temp_f_teksto.innerHTML = data.current.temp_f + "°F";
+	    temp_f_teksto.style="font-size:32px; margin-top:8px; margin-bottom:0px;"
+	    var temp_k_teksto = document.createElement("h2")
+	    temp_k_teksto.innerHTML = String(data.current.temp_c + 273.15) + "°K";
+	    var veter_temp_ikono = document.createElement("div");
+	    //veter_temp_ikono.innerHTML = "<div>" + data.current.temp_c + "°C" + "</div>" + "<img src=\"https:" + data.current.condition.icon + "\">" + "<div>" + data.current.temp_f + "°F" + "</div>";
+	    veter_temp_ikono.append(temp_c_teksto);
+	    veter_temp_ikono.append(veterIkono);
+	    veter_temp_ikono.append(temp_f_teksto);
+	    veter_temp_ikono.style = " display:flex; text-align:center; justify-content: center; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px;";
+	    temp_k_teksto.style = "font-size: 64px; margin:0px;";
+	    //var veterujeto = document.createElement("div")
+	    //veterujeto.append(temp_k_teksto);
+	    //veterujeto.append(veter_temp_ikono);
+
+	    var pricipitaĵh2 = document.createElement("h2");
+	    //Provu trovi tradukojn de pricipitaĵinformon
+	    for (i in kodejo) {
+		if (kodejo[i].code === data.current.condition.code){
+		    var pricipitaĵejo = kodejo[i];
+		    break;
+		}
+	    }
+
+	    //Se ni ne trovis ĝin, uzu la API-an tekston. Alie, daŭrigi. 
+	    if (typeof pricipitaĵejo != "object"){
+		console.log("Ne povis trovi tradukojn");
+		//Trovu uzi la API-an tekston. Se tio ne funkcias, diru "Pricipitaĵo nesciata"
+		if (typeof data.current.condition.text == "string"){
+		    pricipitaĵh2.innerHTML = data.condition.text;
+		} else {
+		    pricipitaĵh2.innerHTML = "Pricipitaĵo nesciata";
+		}
+		console.log(typeof pricipitaĵejo);
+	    } else {
+		//Provu trovi la tradukojn en nia lingvo
+		console.log("Trovis tradukojn");
+		for (i in pricipitaĵejo.languages) {
+		    if (pricipitaĵejo.languages[i].lang_iso === lingvo){
+			var pricipitaĵnomejo = pricipitaĵejo.languages[i];
+			break;
+		    }
+		}
+		//Se estas nokto, ni trovis informon por noktoj, kaj la informo estas en la uzanta lingvo, uzu la nokto-informon en la uzanta lingvo. Faru same por tagoj. Se ni ne havas informon en la uzanta lingvo, provu trovi ĝin esperante.
+		if (typeof pricipitaĵnomejo !== "undefined"){
+		    if (typeof pricipitaĵnomejo.lang_iso === "string" && pricipitaĵnomejo.lang_iso === lingvo && data.current.is_day == 0 && typeof pricipitaĵnomejo.night_text === "string"){
+			console.log("Trovis informon por noktoj en via lingvo");
+			pricipitaĵh2.innerHTML = pricipitaĵnomejo.night_text;
+		    } else if (typeof pricipitaĵnomejo.lang_iso === "string" && pricipitaĵnomejo.lang_iso === lingvo && data.current.is_day == 1 && typeof pricipitaĵnomejo.day_text === "string"){
+			console.log("Trovis informon por tagoj en via lingvo");
+			pricipitaĵh2.innerHTML = pricipitaĵnomejo.day_text;
+		    } else {
+			//Provu trovi informon esperante
+			console.log("Ni ne trovis informon en via lingvo. Provas esperanton.");
+			provuEsperante(data, pricipitaĵejo, pricipitaĵh2);
+		    }
+		} else {
+		    console.log("Ne trovis informon en via lingvo. Provas Esperanton");
+		    provuEsperante(data, pricipitaĵejo, pricipitaĵh2);
+		}
+	    }
+	    pricipitaĵh2.style = "font-size:64px; margin:0px;";
 	    
 	    var veterujo = document.createElement("div");
+
+	    //veterujo.append(veterujeto);
+	    veterujo.append(temp_k_teksto);
+	    veterujo.append(veter_temp_ikono);
+	    veterujo.append(pricipitaĵh2);
+	    outfitdiv.append(veterujo);
 	}
     })
 }
 
+function provuEsperante(data, pricipitaĵejo, pricipitaĵh2){
+    //Provu trovi informon esperante
+    for (i in pricipitaĵejo.languages) {
+	if (pricipitaĵejo.languages[i].lang_iso === "eo"){
+	    var pricipitaĵnomejo = pricipitaĵejo.languages[i];
+	    break;
+	}
+    }
+    //Se estas nokto, ni trovis informon por noktoj, kaj la informo estas esperanta, uzu la nokto-informon en esperanto. Faru same por tagoj. Se ni ne havas informon esperantan, provi trovi ĝin en la altnivelo de la traduko.
+    if (typeof pricipitaĵnomejo !== "undefined"){
+	if (typeof pricipitaĵnomejo.lang_iso === "string" && pricipitaĵnomejo.lang_iso === "eo" && data.current.is_day == 0 && typeof pricipitaĵnomejo.night_text === "string"){
+	    console.log("Trovis esperantan informon por noktoj esperante");
+	    pricipitaĵh2.innerHTML = pricipitaĵnomejo.night_text;
+	} else if (typeof pricipitaĵnomejo.lang_iso === "string" && pricipitaĵnomejo.lang_iso === "eo" && data.current.is_day == 1 && typeof pricipitaĵnomejo.day_text === "string"){
+	    console.log("Trovis esperantan informon por tagoj esperante");
+	    pricipitaĵh2.innerHTML = pricipitaĵnomejo.day_text;
+	}
+    } else {
+	console.log("Ne trovis esperantan informon");
+	//Se estas nokto kaj ni trovis informon por noktoj, uzu ĝin. Faru same por tagoj. Se ne, ĉu niaj tradokoj ne funkcias? Provu uzi la API-ajn tekstojn
+	if (data.current.isday == 0 && typeof pricipitaĵejo.night === "string"){
+	    pricipitaĵh2.innerHTML = pricipitaĵejo.night;
+	} else if (data.current.isday == 1 && typeof pricipitaĵejo.day === "string"){
+	    pricipitaĵh2.innerHTML = pricipitaĵejo.day;
+	} else {
+	    //Provu trovi se ni havas iun ajn informon pri la pricipitaĵo tekste. Se ne, kion okazon??? Kaj ankaŭ, kiel ni estas ĉi tie??? Ĉi tiu devus esti kontrolita antaŭe. Diru "Pricipitaĵo nesciata".
+	    if (typeof data.current.condition.text == "string"){
+		pricipitaĵh2.innerHTML = data.current.condition.text;
+	    } else {
+		pricipitaĵh2.innerHTML = "Pricipitaĵo nesciata";
+	    }
+	}
+    }
+}
 
 
 
