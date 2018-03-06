@@ -27,12 +27,16 @@ function makeRequest() {
 	url: "https://api.apixu.com/v1/current.json?key=6dffcf5b16b24d87bd7191244182602&q=" + document.getElementById("zipcode").value, // what goes here?
 	success: function(data) {
 	    // what goes here?
-	    console.log("success");
 	    var outfitdiv = document.getElementById("outfit");
 	    while (outfitdiv.firstChild) {
 		outfitdiv.removeChild(outfitdiv.firstChild);
 	    }
 	    outfitdiv.style="display:flex; flex-wrap: wrap;";
+
+	    var bildodeĝinzo = document.createElement("img");
+	    bildodeĝinzo.src = 
+	    var ĝinzo = document.createElement("div");
+	    
 	    var lokoNomo = document.createElement("h2");
 	    lokoNomo.innerHTML = data.location.name + ", " + data.location.region + ", " + data.location.country;
 	    var temp_c_teksto = document.createElement("h2");
@@ -127,7 +131,7 @@ function makeRequest() {
 	    var vestaĵh2 = document.createElement("h2");
 	    vertaĵh2.innerHTML = "Sugestita Vestaĵo";
 	    var vestaĵinformo = document.createElement("div");
-	    var vestaĵo = document.createElement("div")
+	    var vestaĵo = document.createElement("div");
 	    
 	    
 	    outfitdiv.append(veterujo);
