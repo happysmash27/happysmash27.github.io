@@ -33,8 +33,10 @@ function makeRequest() {
 	    }
 	    outfitdiv.style="display:flex; flex-wrap: wrap;";
 
+	    var svetero = document.createElement("div");
+	    
 	    var bildodeĝinzo = document.createElement("img");
-	    bildodeĝinzo.src = 
+	    bildodeĝinzo.src = ""
 	    var ĝinzo = document.createElement("div");
 	    
 	    var lokoNomo = document.createElement("h2");
