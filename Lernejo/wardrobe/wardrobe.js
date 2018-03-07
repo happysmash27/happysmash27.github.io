@@ -143,7 +143,7 @@ function makeRequest() {
 	    //Prenu ĉapelon
 	    bivakĉapbildo = document.createElement("img");
 	    bivakĉapbildo.src = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pelzmuetze-Baerenfut-Kaelteschutz.jpg"
-	    bivakĉapbildo.style = "height:100%;";
+	    bivakĉapbildo.style = "height:300px;";
 
 	    //Prenu la krurvestaĵon
 	    krurvestaĵbildo = document.createElement("img");
@@ -176,7 +176,11 @@ function makeRequest() {
 	    var piedvestaĵo = document.createElement("td");
 	    piedvestaĵo.append(piedvestaĵbildo);
 	    piedvestaĵo.append(document.createElement("br"));
-	    piedvestaĵo.append("Marŝbotoj");
+	    if (lingvo === "en") {
+		piedvestaĵo.append("Hiking Boots");
+	    } else {
+		piedvestaĵo.append("Marŝbotoj");
+	    }
 	    //var ŝuteksto = document.createElement("div");
 	    //ŝuteksto.innerHTML = "Marŝbotoj";
 	    //piedvestaĵdiv.append(ŝuteksto);
@@ -191,33 +195,57 @@ function makeRequest() {
 	    var palto = document.createElement("td");
 	    palto.append(paltbildo);
 	    palto.append(document.createElement("br"));
-	    palto.append("Palto");
+	    if (lingvo === "en") {
+		palto.append("Winter Coat");
+	    } else {
+		palto.append("Palto");
+	    }
 
 	    //Kreu krurvestaĵdivon
 	    var krurvestaĵo = document.createElement("td");
 	    krurvestaĵo.style = "height:100%;";
 	    krurvestaĵo.append(krurvestaĵbildo);
 	    krurvestaĵo.append(document.createElement("br"))
-	    krurvestaĵo.append("Ŝarĝpantelono");
+	    if (lingvo === "en") {
+		krurvestaĵo.append("Cargo Pants");
+	    } else {
+		krurvestaĵo.append("Ŝarĝpantelono");
+	    }
 
 	    //Kreu brustvestaĵdivon
 	    var nigraĉemizo = document.createElement("td");
 	    nigraĉemizo.append(nigraĉemizbildo);
 	    nigraĉemizo.append(document.createElement("br"));
-	    nigraĉemizo.append("T-Ĉemizo");
+	    if (lingvo === "en") {
+		nigraĉemizo.append("T-shirt");
+	    } else {
+		nigraĉemizo.append("T-ĉemizo");
+	    }
 	    var bluaĉemizo = document.createElement("td");
 	    bluaĉemizo.append(bluaĉemizbildo);
 	    bluaĉemizo.append(document.createElement("br"));
-	    bluaĉemizo.append("T-Ĉemizo");
+	    if (lingvo === "en") {
+		bluaĉemizo.append("T-shirt");
+	    } else {
+		bluaĉemizo.append("T-ĉemizo");
+	    }
 
 	    var bivakĉapo = document.createElement("td");
 	    bivakĉapo.append(bivakĉapbildo);
 	    bivakĉapo.append(document.createElement("br"));
-	    bivakĉapo.append("Bivakĉapo");
+	    if (lingvo === "en") {
+		bivakĉapo.append("Balaclava");
+	    } else {
+		bivakĉapo.append("Bivakĉapo");
+	    }
 	    
 
 	    var vestaĵh2 = document.createElement("h2");
-	    vestaĵh2.innerHTML = "Sugestita Vestaĵo";
+	    if (lingvo === "en") {
+		vestaĵh2.innerHTML = "Suggested Outfit";
+	    } else {
+		vestaĵh2.innerHTML = "Sugestita Vestaĵo";
+	    }
 	    //var vestaĵh2td = document.createElement("td");
 	    //vestaĵh2td.append(vestaĵh2);
 	    //var vestaĵh2tdtr = document.createElement("tr");
@@ -246,10 +274,18 @@ function makeRequest() {
 	    if (data.current.feelslike_c < 10) {
 		vestaĵinformo.append(palto);
 	    } else if (data.current.feelslike_c < 22) {
-		svetero.append("Sveteron")
+		if (lingvo === "en") {
+		    svetero.append("Sweater");
+		} else {
+		    svetero.append("Sveteron");
+		}
 		vestaĵinformo.append(svetero);
 	    } else if (data.current.feelslike_c < 26) {
-		svetero.append("Tenu Sveteron")
+		if (lingvo === "en") {
+		    svetero.append("Bring Sweater");
+		} else {
+		    svetero.append("Tenu Sveteron");
+		}
 		vestaĵinformo.append(svetero);
 	    }
 	    vestaĵinformo.append(krurvestaĵo);
@@ -259,6 +295,7 @@ function makeRequest() {
 
 	    
 	    var vestaĵo = document.createElement("table");
+	    vestaĵo.style = "margin-top: 2em;";
 	    //vestaĵo.style = "width:90%; height:400;"
 	    //vestaĵo.style = "display:flex; flex-direction: column;";
 	    vestaĵo.append(vestaĵhead);
