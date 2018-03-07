@@ -140,37 +140,47 @@ function makeRequest() {
 	    veterujo.append(pricipitaĵh2);
 
 
+	    if (data.current.feelslike_c < 0) {
+		var alto = "200px";
+	    } else if (data.current.feelslike_c < 10) {
+		var alto = "240px";
+	    } else if (data.current.feelslike_c < 26) {
+		var alto = "240px";
+	    } else {
+		var alto = "300px";
+	    }
+
 	    //Prenu ĉapelon
 	    bivakĉapbildo = document.createElement("img");
 	    bivakĉapbildo.src = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pelzmuetze-Baerenfut-Kaelteschutz.jpg"
-	    bivakĉapbildo.style = "height:300px;";
+	    bivakĉapbildo.style = "height:" + alto + ";";
 
 	    //Prenu la krurvestaĵon
 	    krurvestaĵbildo = document.createElement("img");
 	    krurvestaĵbildo.src = "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cargo_pants_002.jpg";
-	    krurvestaĵbildo.style = "height:300px;";
+	    krurvestaĵbildo.style = "height:" + alto + ";";
 
 	    //Prenu la brustvestaĵon
 	    bluaĉemizbildo = document.createElement("img");
 	    bluaĉemizbildo.src = "https://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg";
-	    bluaĉemizbildo.style = "height:300px;";
+	    bluaĉemizbildo.style = "height:" + alto + ";";
 	    nigraĉemizbildo = document.createElement("img");
 	    nigraĉemizbildo.src = "https://upload.wikimedia.org/wikipedia/commons/8/81/Camiseta-negra.jpg";
-	    nigraĉemizbildo.style = "height:300px;";
+	    nigraĉemizbildo.style = "height:" + alto + ";";
 
 	    //Prenu la jakon, mantelon, palton, aŭ anorakon
 	    var sveterbildo = document.createElement("img");
 	    sveterbildo.src = "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kapuzensweatshirt_marine.jpg";
-	    sveterbildo.style = "height:300px;";
+	    sveterbildo.style = "height:" + alto + ";";
 
 	    var paltbildo = document.createElement("img");
 	    paltbildo.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Woman%2C_portrait%2C_winter%2C_snow%2C_winter_coat%2C_shades%2C_yard%2C_porch_Fortepan_54404.jpg";
-	    paltbildo.style = "height:300px;";
+	    paltbildo.style = "height:" + alto + ";";
 
 	    //Prenu la piedvestaĵon
 	    var piedvestaĵbildo = document.createElement("img");
 	    piedvestaĵbildo.src = "https://upload.wikimedia.org/wikipedia/commons/2/29/Hiking_shoes_Lowa.jpg";
-	    piedvestaĵbildo.style = "height:300px;";
+	    piedvestaĵbildo.style = "height:" + alto + ";";
 
 	    //Kreu piedvestaĵdivon
 	    var piedvestaĵo = document.createElement("td");
@@ -295,7 +305,7 @@ function makeRequest() {
 
 	    
 	    var vestaĵo = document.createElement("table");
-	    vestaĵo.style = "margin-top: 2em;";
+	    vestaĵo.style = "margin-top: 2em; margin-bottom: 1em;";
 	    //vestaĵo.style = "width:90%; height:400;"
 	    //vestaĵo.style = "display:flex; flex-direction: column;";
 	    vestaĵo.append(vestaĵhead);
