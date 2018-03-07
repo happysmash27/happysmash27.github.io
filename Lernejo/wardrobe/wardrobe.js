@@ -31,7 +31,8 @@ function makeRequest() {
 	    while (outfitdiv.firstChild) {
 		outfitdiv.removeChild(outfitdiv.firstChild);
 	    }
-	    outfitdiv.style="display:flex; flex-wrap: wrap;";
+	    //outfitdiv.style="display:flex; flex-wrap: wrap;";
+	    outfitdiv.style="display:flex; flex-direction: column";
 
 	    var svetero = document.createElement("div");
 	    
@@ -39,7 +40,7 @@ function makeRequest() {
 	    bildodeĝinzo.src = ""
 	    var ĝinzo = document.createElement("div");
 	    
-	    var lokoNomo = document.createElement("h2");
+	    var lokoNomo = document.createElement("h1");
 	    lokoNomo.innerHTML = data.location.name + ", " + data.location.region + ", " + data.location.country;
 	    var temp_c_teksto = document.createElement("h2");
 	    temp_c_teksto.innerHTML = data.current.temp_c + "°C";
@@ -51,8 +52,16 @@ function makeRequest() {
 	    temp_f_teksto.innerHTML = data.current.temp_f + "°F";
 	    temp_f_teksto.style="font-size:32px; margin-top:8px; margin-bottom:0px;"
 	    var temp_k_teksto = document.createElement("h2")
-	    var multnumb = 1;
-	    for (var i = 0; (i < data.current.temp_c.toString().split(".")[1].length || i < 273.15.toString().split(".")[1].length); i++){
+	    var multnumb = 10;
+	    console.log(data.current.temp_c.toString().split(".")[1]);
+	    console.log(data.current.temp_c);
+	    console.log(typeof data.current.temp_c);
+	    if (typeof data.current.temp_c.toString().split(".")[1] === "undefined") {
+		var declong = 0;
+	    } else {
+		var declong = data.current.temp_c.toString().split(".")[1].length;
+	    }
+	    for (var i = 0; (i < declong || i < 273.15.toString().split(".")[1].length); i++){
 		multnumb *= 10;
 	    }
 	    console.log(multnumb);
@@ -74,6 +83,7 @@ function makeRequest() {
 	    //var veterujeto = document.createElement("div")
 	    //veterujeto.append(temp_k_teksto);
 	    //veterujeto.append(veter_temp_ikono);
+
 
 	    var pricipitaĵh2 = document.createElement("h2");
 	    //Provu trovi tradukojn de pricipitaĵinformon
@@ -130,12 +140,132 @@ function makeRequest() {
 	    veterujo.append(pricipitaĵh2);
 
 
+	    //Prenu ĉapelon
+	    bivakĉapbildo = document.createElement("img");
+	    bivakĉapbildo.src = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pelzmuetze-Baerenfut-Kaelteschutz.jpg"
+	    bivakĉapbildo.style = "height:100%;";
+
+	    //Prenu la krurvestaĵon
+	    krurvestaĵbildo = document.createElement("img");
+	    krurvestaĵbildo.src = "https://upload.wikimedia.org/wikipedia/commons/3/3c/Cargo_pants_002.jpg";
+	    krurvestaĵbildo.style = "height:300px;";
+
+	    //Prenu la brustvestaĵon
+	    bluaĉemizbildo = document.createElement("img");
+	    bluaĉemizbildo.src = "https://upload.wikimedia.org/wikipedia/commons/2/24/Blue_Tshirt.jpg";
+	    bluaĉemizbildo.style = "height:300px;";
+	    nigraĉemizbildo = document.createElement("img");
+	    nigraĉemizbildo.src = "https://upload.wikimedia.org/wikipedia/commons/8/81/Camiseta-negra.jpg";
+	    nigraĉemizbildo.style = "height:300px;";
+
+	    //Prenu la jakon, mantelon, palton, aŭ anorakon
+	    var sveterbildo = document.createElement("img");
+	    sveterbildo.src = "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kapuzensweatshirt_marine.jpg";
+	    sveterbildo.style = "height:300px;";
+
+	    var paltbildo = document.createElement("img");
+	    paltbildo.src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Woman%2C_portrait%2C_winter%2C_snow%2C_winter_coat%2C_shades%2C_yard%2C_porch_Fortepan_54404.jpg";
+	    paltbildo.style = "height:300px;";
+
+	    //Prenu la piedvestaĵon
+	    var piedvestaĵbildo = document.createElement("img");
+	    piedvestaĵbildo.src = "https://upload.wikimedia.org/wikipedia/commons/2/29/Hiking_shoes_Lowa.jpg";
+	    piedvestaĵbildo.style = "height:300px;";
+
+	    //Kreu piedvestaĵdivon
+	    var piedvestaĵo = document.createElement("td");
+	    piedvestaĵo.append(piedvestaĵbildo);
+	    piedvestaĵo.append(document.createElement("br"));
+	    piedvestaĵo.append("Marŝbotoj");
+	    //var ŝuteksto = document.createElement("div");
+	    //ŝuteksto.innerHTML = "Marŝbotoj";
+	    //piedvestaĵdiv.append(ŝuteksto);
+
+	    //Kreu supervestaĵdivon
+	    var svetero = document.createElement("td");
+	    svetero.append(sveterbildo);
+	    svetero.append(document.createElement("br"));
+	    //supervestaĵo.append("Svetero");
+
+	    //Kreu supervestaĵdivon
+	    var palto = document.createElement("td");
+	    palto.append(paltbildo);
+	    palto.append(document.createElement("br"));
+	    palto.append("Palto");
+
+	    //Kreu krurvestaĵdivon
+	    var krurvestaĵo = document.createElement("td");
+	    krurvestaĵo.style = "height:100%;";
+	    krurvestaĵo.append(krurvestaĵbildo);
+	    krurvestaĵo.append(document.createElement("br"))
+	    krurvestaĵo.append("Ŝarĝpantelono");
+
+	    //Kreu brustvestaĵdivon
+	    var nigraĉemizo = document.createElement("td");
+	    nigraĉemizo.append(nigraĉemizbildo);
+	    nigraĉemizo.append(document.createElement("br"));
+	    nigraĉemizo.append("T-Ĉemizo");
+	    var bluaĉemizo = document.createElement("td");
+	    bluaĉemizo.append(bluaĉemizbildo);
+	    bluaĉemizo.append(document.createElement("br"));
+	    bluaĉemizo.append("T-Ĉemizo");
+
+	    var bivakĉapo = document.createElement("td");
+	    bivakĉapo.append(bivakĉapbildo);
+	    bivakĉapo.append(document.createElement("br"));
+	    bivakĉapo.append("Bivakĉapo");
+	    
+
 	    var vestaĵh2 = document.createElement("h2");
-	    vertaĵh2.innerHTML = "Sugestita Vestaĵo";
-	    var vestaĵinformo = document.createElement("div");
-	    var vestaĵo = document.createElement("div");
+	    vestaĵh2.innerHTML = "Sugestita Vestaĵo";
+	    //var vestaĵh2td = document.createElement("td");
+	    //vestaĵh2td.append(vestaĵh2);
+	    //var vestaĵh2tdtr = document.createElement("tr");
+	    //vestaĵh2tdtr.append(vestaĵh2td);
 	    
+	    //vestaĵh2tdtr.append(vestaĵh2);
+
 	    
+	    vestaĵhead = document.createElement("tr");
+	    //vestaĵhead.append(vestaĵh2tdtr);
+	    vestaĵhead.append(vestaĵh2);
+	    var vestaĵtbody = document.createElement("tr");
+	    //vestaĵtbody.style = "height:100%;"
+	    var vestaĵinformo = document.createElement("tr");
+	    //vestaĵinformo.style = "height:100%";
+	    //vestaĵinformo.style = "display:flex; height:400px;";
+	    if (data.current.feelslike_c < 0) {
+		vestaĵinformo.append(bivakĉapo);
+	    }
+	    if (data.current.feelslike_c < 26) {
+		vestaĵinformo.append(nigraĉemizo);
+	    } else {
+		vestaĵinformo.append(bluaĉemizo);
+	    }
+	    console.log(data.current.feelslike_c);
+	    if (data.current.feelslike_c < 10) {
+		vestaĵinformo.append(palto);
+	    } else if (data.current.feelslike_c < 22) {
+		svetero.append("Sveteron")
+		vestaĵinformo.append(svetero);
+	    } else if (data.current.feelslike_c < 26) {
+		svetero.append("Tenu Sveteron")
+		vestaĵinformo.append(svetero);
+	    }
+	    vestaĵinformo.append(krurvestaĵo);
+	    vestaĵinformo.append(piedvestaĵo);
+	    vestaĵtbody.append(vestaĵinformo);
+
+
+	    
+	    var vestaĵo = document.createElement("table");
+	    //vestaĵo.style = "width:90%; height:400;"
+	    //vestaĵo.style = "display:flex; flex-direction: column;";
+	    vestaĵo.append(vestaĵhead);
+	    vestaĵo.append(vestaĵtbody);
+	    
+
+	    outfitdiv.append(lokoNomo);
 	    outfitdiv.append(veterujo);
 	    outfitdiv.append(vestaĵo);
 	}
