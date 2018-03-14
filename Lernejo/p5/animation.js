@@ -12,18 +12,11 @@ var cirklayklakŝanĝo = 0;
 var cirklaRapido = 0;
 var cirklaAkcelo = 0;
 var cirklaDiametro = 100;
-var triangulax1;
-var triangulay1;
-var triangulax2;
-var triangulay2;
-var triangulax3;
-var triangulay3;
-var triangulax12;
-var triangulax22;
-var triangulax32;
-var triangulaRapido;
+var triangulax;
+var triangulay;
+var triangulaRapido = 0;
 var triangulayklakŝanĝo = 0;
-var triangulaAkcelo;
+var triangulaAkcelo = 0;
 console.log(window.innerWidth);
 
 function setup() {
@@ -31,36 +24,40 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     x = (width/2)-(rectWidth/2);
     y = ((height/2)-(rectWidth/2)) + yklakŝanĝo;
-    cirklax = ((x+(rectWidth/2))/2);
+    
+    cirklax = (((x+(rectWidth/2))-200)/2);
     cirklay = (height/2) + cirklayklakŝanĝo;
-    triangulax2 = ((x+(rectWidth/2))+width)/2;
-    triangulay2 = (height/2)-50 + triangulayklakŝanĝo;
+    
+    triangulax = ((x+(rectWidth/2))+width+200)/2;
+    triangulay = (height/2) + triangulayklakŝanĝo;
 }
 
 function draw() {
     // put drawing code here
     clear();
-    console.log("htrawe");
-    triangulax1 = triangulax2-(100/2);
-    triangulay1 = triangulay2+100;
-    triangulax3 = triangulax2+(100/2);
-    triangulay3 = triangulay2+100;
     x2 = x - width;
     cirklax2 = cirklax - width;
-    triangulax12 = triangulax1 - width;
-    triangulax22 = triangulax2 - width;
-    triangulax32 = triangulax3 - width;
     rect(x, y, rectWidth, rectWidth);
     rect(x2, y, rectWidth, rectWidth);
-    ellipse(cirklax, cirklay, cirklaDiametro);
-    ellipse(cirklax2, cirklay, cirklaDiametro);
-    triangle(triangulax1, triangulay1, triangulax2, triangulay2, triangulax3, triangulay3);
-    triangle(triangulax12, triangulay1, triangulax22, triangulay2, triangulax32, triangulay3);
+    
+    ellipse(cirklax, cirklay+cirklayklakŝanĝo, cirklaDiametro);
+    ellipse(cirklax2, cirklay+cirklayklakŝanĝo, cirklaDiametro);
+    
+    beginShape();
+    vertex(createVector(triangulax-50, triangulay+50+triangulayklakŝanĝo).x, createVector(triangulax-50, triangulay+50+triangulayklakŝanĝo).y);
+    vertex(createVector(triangulax, triangulay-50+triangulayklakŝanĝo).x, createVector(triangulax, triangulay-50+triangulayklakŝanĝo).y);
+    vertex(createVector(triangulax+50, triangulay+50+triangulayklakŝanĝo).x, createVector(triangulax+50, triangulay+50+triangulayklakŝanĝo).y);
+    endShape(CLOSE);
+    beginShape();
+    vertex(createVector(triangulax-50-width, triangulay+50+triangulayklakŝanĝo).x, createVector(triangulax-50-width, triangulay+50+triangulayklakŝanĝo).y);
+    vertex(createVector(triangulax-width, triangulay-50+triangulayklakŝanĝo).x, createVector(triangulax-width, triangulay-50+triangulayklakŝanĝo).y);
+    vertex(createVector(triangulax+50-width, triangulay+50+triangulayklakŝanĝo).x, createVector(triangulax+50-width, triangulay+50+triangulayklakŝanĝo).y);
+    endShape(CLOSE);
+    //triangle(triangulax-50, triangulay+50, triangulax, triangulay-50, triangulax+50, triangulay+50);
+    //triangle(triangulax12, triangulay1, triangulax22, triangulay2, triangulax32, triangulay3);
     x++;
     cirklax++;
-    triangulax2++;
-    triangulax1 = triangulax2-(100/2);
-    triangulax3 = triangulax2+(100/2);
+    triangulax++;
     if (yklakŝanĝo<=0){
 	rapido += akcelo;
 	yklakŝanĝo += rapido;
@@ -94,10 +91,8 @@ function draw() {
     if (cirklax-(cirklaDiametro/2) > width){
 	cirklax = cirklaDiametro/2;
     }
-    if (triangulax1 > width){
-	triangulax2 = 0 + 100/2;
-	triangulax1 = triangulax2-(100/2);
-	triangulax3 = triangulax2+(100/2);
+    if (triangulax-50 > width){
+	triangulax = 0 + 100/2;
     }
     y = ((height/2)-(cirklaDiametro/2)) + yklakŝanĝo;
 }
@@ -107,9 +102,20 @@ function mouseClicked(){
 
     console.log(x);
     console.log(mouseX);
-    if (((x < mouseX && mouseX < x+rectWidth)||(x2 < mouseX && mouseX < x2+rectWidth))  &&  y < mouseY && mouseY < mouseY+rectWidth){
-	console.log(((x < mouseX && mouseX < x+rectWidth)||(x2 < mouseX && mouseX < x2+rectWidth))  &&  y < mouseY && mouseY < mouseY+rectWidth)
+    if (((x < mouseX && mouseX < x+rectWidth)||(x2 < mouseX && mouseX < x2+rectWidth))  &&  y+yklakŝanĝo < mouseY && mouseY < y+rectWidth+yklakŝanĝo){
 	rapido = -3;
 	akcelo = 0.1;
+    }
+
+    if (collidePointCircle(mouseX, mouseY, cirklax, cirklay+cirklayklakŝanĝo, cirklaDiametro) || collidePointCircle(mouseX, mouseY, cirklax2, cirklay+cirklayklakŝanĝo, cirklaDiametro)){
+	console.log(true);
+	cirklaRapido = -3;
+	cirklaAkcelo = 0.1;
+    }
+
+    if (collidePointPoly(mouseX, mouseY, [createVector(triangulax-50, triangulay+50+triangulayklakŝanĝo), createVector(triangulax, triangulay-50+triangulayklakŝanĝo), createVector(triangulax+50, triangulay+50+triangulayklakŝanĝo)]) || collidePointPoly(mouseX, mouseY, [createVector(triangulax-50-width, triangulay+50+triangulayklakŝanĝo), createVector(triangulax-width, triangulay-50+triangulayklakŝanĝo), createVector(triangulax+50-width, triangulay+50+triangulayklakŝanĝo)])){
+	console.log(true);
+	triangulaRapido = -3;
+	triangulaAkcelo = 0.1;
     }
 }
