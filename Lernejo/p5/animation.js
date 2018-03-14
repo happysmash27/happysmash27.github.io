@@ -25,10 +25,10 @@ function setup() {
     x = (width/2)-(rectWidth/2);
     y = ((height/2)-(rectWidth/2)) + yklakŝanĝo;
     
-    cirklax = (((x+(rectWidth/2))-200)/2);
+    cirklax = (((x+(rectWidth/2)))/2);
     cirklay = (height/2) + cirklayklakŝanĝo;
     
-    triangulax = ((x+(rectWidth/2))+width+200)/2;
+    triangulax = ((x+(rectWidth/2))+width)/2;
     triangulay = (height/2) + triangulayklakŝanĝo;
 }
 
