@@ -1,0 +1,72 @@
+@import url("bootstrap-3.3.7-dist/css/bootstrap.css");
+
+@media screen and (min-width: 992px) {
+    .novmargin{margin:7.5% 10px 0px;}
+}
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+    .novmargin{margin:auto;}
+}
+
+@media screen and (max-width:768px) {
+    .novmargin li{margin-top:5px;}
+}
+
+body{background-color:#060606;color:#FFF;}
+article{background-color:#FFF; color:#000;}
+
+header{
+    border-bottom:solid;
+    border-color:#05A;
+    border-width:0px 2px 5px;
+    background-color:#07C;
+    color:#FFF;
+}
+
+ul.nav li{
+    background-color:#6DD;
+    border-radius:5px;
+    color:#000;
+}
+
+ul.nav li a{
+    color:#044;
+    font-weight:bold;
+}
+
+ul.nav li a:hover,ul.nav li a:focus{
+    color:#022;
+    font-weight:bold;
+}
+
+ul.nav li.active a:hover, ul.nav li.active a:focus, ul.nav li.active a{
+    background-color:#AFF;
+    border-radius:5px;
+    color:#000;
+}
+
+ul.nav li a:hover, ul.nav li a:focus {
+		       background-color:#AFF;
+		   }
+
+.carousel-inner > .item > div > img,
+.carousel-inner > .item > div> a > img {
+    image-rendering:optimizeSpeed;             /* Legal fallback */
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    image-rendering:crisp-edges;               /* CSS4 Proposed  */
+    image-rendering:pixelated;                 /* CSS4 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
+article p, article h1, article h2, article h3, article h4, article h5, article h6, article blockquote{padding:0px 10px;}
+article blockquote{
+    margin:10px 10px;
+    background-color:#6b6b50;
+    border-left:solid;
+    border-width:5px;
+    border-color:#4b4b30;
+    color:#FFF;
+}
