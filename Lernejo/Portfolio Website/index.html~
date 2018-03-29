@@ -16,19 +16,28 @@
       </div>
       <ul class="nav nav-pills novmargin">
         <li class="active">
-          <a href="home.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="myfuture.html">My Future</a>
+          <a href="college.html">College</a>
         </li>
         <li>
-          <a href="whycollege.html">Why College</a>
+          <a href="credit.html">Credit</a>
         </li>
         <li>
-          <a href="requirements.html">Requirements</a>
+          <a href="career.html">Career</a>
         </li>
         <li>
-          <a href="cost.html">Paying For College</a>
+          <a href="lifestyle.html">Lifestyle</a>
+        </li>
+	<li>
+          <a href="family.html">Family</a>
+        </li>
+	<li>
+          <a href="life.html">My Life</a>
+        </li>
+	<li>
+          <a href="sources.html">Sources</a>
         </li>
       </ul>
       
