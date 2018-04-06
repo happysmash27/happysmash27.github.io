@@ -55,10 +55,10 @@
 	  <ul class="carousel-inner">
 	    <li class="item active">
 	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Akademio_Internacia_de_la_Sciencoj_San_Marino">
-		  <img src="https://upload.wikimedia.org/wikipedia/eo/8/85/Aisemblemo.png" class="d-block center-block" style="width:100%">
+		<a href="https://en.wikipedia.org/wiki/Technical_University_of_Dortmund">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Mathetower_TU_Dortmund.jpg" class="d-block center-block" style="width:100%">
 		  <div class="carousel-caption">
-		    <h3>Akademio Internacia de la Sciencoj</h3>
+		    <h3>Technical University of Dortmund</h3>
 		  </div>
 		</a>
 	      </div>
@@ -95,11 +95,17 @@
       </div>
       <div class="row">
 	<h1>Colleges</h1>
+      </div>
+      <div class="row">
 	<p>There are several colleges I am interested in.</p>
-	<p>The first college I am interested in attending is the <a href="http://www.ais-sanmarino.org/">Akademio Internacia de la Sciencoj</a>, because they speak Esperanto. Unfortunutelly, however, their website has a huge lack of information, so it's hard to even find where they are or which courses they offer.</p>
-	<p>The second college I am looking at is the <a href="https://www.tum.de/">Technical University of Munich</a>, because it offers programs in all of the subjects which I am interested in, and because it is in Germany therefore tuition-free (even for foreigners!). I absolutelly hate debt, and will do anything in my power to avoid it!</p>
+	<p>The first college I am interested in attending is the <a href="https://www.tu-dortmund.de/uni/de/Uni/">Technical University of Dortmund</a>, as it offers courses I am interested in, is tuition free even for foreigners due to being in Germany, and because it has a nice monorail system.</p>
+	<p>The second college I am looking at is the <a href="https://www.tum.de/">Technical University of Munich</a>, since it also offers courses I am interested in, and is free due to being in Germany.</p>
 	<p>For the same reason, I am also interested in the similerly named <a href="https://www.tu-berlin.de/">Technical University of Berlin</a>; it offers all of the courses I am interested as well, and has the tuition-free aspect too, since it is also in Germany.</p>
       </div>
+      <div class="row">
+	<p>Price for 4 years of 8 semesters: <b>Free</b>. If it wasn't free, I wouldn't be able to afford it and therefore would not be able to go. </p>
+      </div>
+      <div class="row"></div>
     </div>
 </div>
 </article>
