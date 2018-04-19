@@ -15,7 +15,7 @@
 	<h2 style="margin:0.25em auto">By happysmash27</h2>
       </div>
       <ul class="nav nav-pills novmargin">
-        <li class="active">
+        <li>
           <a href="index.html">Home</a>
         </li>
         <li>
@@ -27,7 +27,7 @@
         <li>
           <a href="career.html">Career</a>
         </li>
-        <li>
+        <li class="active">
           <a href="lifestyle.html">Lifestyle</a>
         </li>
 	<li>
@@ -44,8 +44,7 @@
     </div>
   </header>
   <article class="container">
-    <div class="collumn">
-      <div class="row">
+    <!--<div class="row">
 	<div class="carousel slide" id="main_carousel">
 	  <ol class="carousel-indicators">
 	    <li data-target="#main_carousel" data-slide-to="0" class="active"></li>
@@ -92,10 +91,17 @@
 	      <span class="sr-only">Next</span>
 	    </a>
 	</div>
+    </div>-->
+    <div class="row">
+      <div class="row">
+	<h1>Transport options</h1>
       </div>
       <div class="row">
-	<h1>Lifestyle</h1>
-	<p></p> 
+	<div class="col-md-3 center-block text-center">
+	  <h2>Metro</h2>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
       </div>
     </div>
 </div>
