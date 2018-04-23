@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Lifestyle — Portfolio Project</title>
+  <title>Lifestyle – Portfolio Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="alia.css" />
@@ -93,18 +93,191 @@
 	</div>
     </div>-->
     <div class="row">
-      <div class="row">
-	<h1>Transport options</h1>
+      <div class="row text-center center-block">
+	<h1>Home options</h1>
       </div>
-      <div class="row">
+      <div class="row text-center center-block">
+	<h2>Initial Location – California</h2>
 	<div class="col-md-3 center-block text-center">
-	  <h2>Metro</h2>
+	  <h3 class="text-center center-block">Parent's Home</h3>
+	  <img class="img-responsive center-block">
+	  <p>Why spend on a home now, when I can save and buy a better home later?</p>
+	  <b>Cost: $0</b>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Land With Prefabricated House</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$20,000 including solar array. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Van Dwelling</h3>
+	  <img class="img-responsive center-block">
+	  <p>Several thousand dollars, or around ~$20,000 with land and solar array.</p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Cheap Boat</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$5,000, plus ~$500 per month.</p>
+	</div>
+      </div>
+      <div class="row text-center center-block">
+	<h2>Anarkikomunismolando – Ocean Version</h2>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Parent's Home</h3>
+	  <img class="img-responsive center-block">
+	  <p>Why spend on a home now, when I can save and buy a better home later?</p>
+	  <b>Cost: $0</b>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Land With Prefabricated House</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$20,000 including solar array. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Van Dwelling</h3>
+	  <img class="img-responsive center-block">
+	  <p>Several thousand dollarsl, or around ~$20,000 with land and solar array.</p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Boat</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$5,000, plus ~$500 per month.</p>
+	</div>
+      </div>
+      <div class="row text-center center-block">
+	<h2>Anarkikomunismolando – Antarctica Version</h2>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Parent's Home</h3>
+	  <img class="img-responsive center-block">
+	  <p>Why spend on a home now, when I can save and buy a better home later?</p>
+	  <b>Cost: $0</b>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Land With Prefabricated House</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$20,000 including solar array. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Van Dwelling</h3>
+	  <img class="img-responsive center-block">
+	  <p>Several thousand dollarsl, or around ~$20,000 with land and solar array.</p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Boat</h3>
+	  <img class="img-responsive center-block">
+	  <p>~$5,000, plus ~$500 per month.</p>
+	</div>
+      </div>
+    </div>
+
+
+    <div class="row text-center center-block">
+      <h1>Transport options</h1>
+      <div class="row text-center center-block">
+	<h2>Initial Location – Pasadena</h2>
+	<p>Most likely, I will just use the metro here, because I plan on staying for as little time as possible</p>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
 	  <img class="img-responsive center-block">
 	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
 	</div>
       </div>
-    </div>
-</div>
-</article>
+      <div class="row text-center center-block">
+	<h2>Anarkikomunismolando – Ocean Version</h2>
+	<p>Most likely, I will just use the metro here, because I plan on staying for as little time as possible</p>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+	<div class="col-md-3 center-block text-center">
+	  <h3 class="text-center center-block">Metro</h3>
+	  <img class="img-responsive center-block">
+	  <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	</div>
+      </div>
+      <div class="row text-center center-block">
+	<h2>Anarkikomunismolando – Antarctica Version</h2>
+	<div class="col-md-6 text-center center-block">
+	  <h3>Boats</h3>
+	  <div class="row text-center center-block">
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	  </div>
+	  <div class="row text-center center-block">
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	  </div>
+	</div>
+	<div class="col-md-6 text-center center-block">
+	  <h3>Land Vehicles</h3>
+	  <div class="row text-center center-block">
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	  </div>
+	  <div class="row text-center center-block">
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	    <div class="col-md-6 center-block text-center">
+	      <h4 class="text-center center-block">Metro</h4>
+	      <img class="img-responsive center-block">
+	      <p>I don't go any places, and with the post office around the corner and B2B shipping available, running my C Corporation should be easy using only the train. </p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+  </article>
 
 </body>
