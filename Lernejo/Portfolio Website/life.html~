@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Sources for Portfolio Project</title>
+  <title>College Choices</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="alia.css" />
@@ -11,7 +11,7 @@
   <header class="container">
     <div class="row">
       <div class="col-md-4">
-        <h1 style="margin:0.25em auto">Portfolio Project</h1>
+        <h1 style="margin:0.25em auto">College Choices</h1>
 	<h2 style="margin:0.25em auto">By happysmash27</h2>
       </div>
       <ul class="nav nav-pills novmargin">

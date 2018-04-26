@@ -205,10 +205,10 @@
 	</div>
       </div>
       <div class="row text-center center-block">
-	<div class="col-md-6 text-center center-block" style="border-right:solid;">
+	<div class="col-md-6 text-center center-block" style="border-right:solid 1px;">
 	  <h2>Anarkikomunismolando – Ocean Version</h2>
 	</div>
-	<div class="col-md-6 text-center center-block">
+	<div class="col-md-6 text-center center-block" style="border-left:solid 2px;">
 	  <h2>Anarkikomunismolando – Antarctica Version</h2>
 	</div>
       </div>
