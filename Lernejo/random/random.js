@@ -104,7 +104,7 @@ function createThirdScene() {
     var rand = (Math.random())
     if (rand<=0.5){
 	makeIframe(35,15,96,54,1920,1080,"https://kde.org")
-    } else {makeIframe(35,15,96,54,1920,1080,"https://duckduckgo.com")
+    } else {makeIframe(35,15,96,54,1920,1080,"https://anarkikomunismolando.org")
     }
 }
 
