@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>College Choices</title>
+  <title>Life – Portfolio Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="alia.css" />
@@ -11,11 +11,11 @@
   <header class="container">
     <div class="row">
       <div class="col-md-4">
-        <h1 style="margin:0.25em auto">College Choices</h1>
+        <h1 style="margin:0.25em auto">Portfolio</h1>
 	<h2 style="margin:0.25em auto">By happysmash27</h2>
       </div>
       <ul class="nav nav-pills novmargin">
-        <li class="active">
+        <li>
           <a href="index.html">Home</a>
         </li>
         <li>
@@ -33,7 +33,7 @@
 	<li>
           <a href="family.html">Family</a>
         </li>
-	<li>
+	<li class="active">
           <a href="life.html">My Life</a>
         </li>
 	<li>
@@ -46,56 +46,17 @@
   <article class="container">
     <div class="collumn">
       <div class="row">
-	<div class="carousel slide" id="main_carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#main_carousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#main_carousel" data-slide-to="1"></li>
-	    <li data-target="#main_carousel" data-slide-to="2"></li>
-	  </ol>
-	  <ul class="carousel-inner">
-	    <li class="item active">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Akademio_Internacia_de_la_Sciencoj_San_Marino">
-		  <img src="https://upload.wikimedia.org/wikipedia/eo/8/85/Aisemblemo.png" class="d-block center-block" style="width:100%">
-		  <div class="carousel-caption">
-		    <h3>Akademio Internacia de la Sciencoj</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <li class="item">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Technical_University_of_Munich">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/TUM_Audimax.jpg" class="d-block h-100 img-responsive center-block">
-		  <div class="carousel-caption">
-		    <h3>Technical University of Munich</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <li class="item">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Technical_University_of_Berlin">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Tu_hauptgebaude_2006.jpg" class="d-block h-100 img-responsive center-block">
-		  <div class="carousel-caption">
-		    <h3>Technical University of Berlin</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <a class="left carousel-control" href="#main_carousel" data-slide="prev">
-	      <span class="glyphicon glyphicon-chevron-left"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#main_carousel" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-right"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	</div>
-      </div>
-      <div class="row">
-	<h1>Portfolio</h1>
-	<p></p> 
+	<h1>Life</h1>
+	<p>In conclusion, my life doesn't fit very well in this model, and I am terrible at project management. If I had only spent less time on the 2mm bevel in the images for debt, this would probably be finished. </p>
+	<h2>Costs</h2>
+	<h3>Now:</h3>
+	<p>Almost $0</p>
+	<h3>Soon</h3>
+	<p>~$200/month (with food, internet, power in parents home). May make ~$5000 investment into solar power if I stay much longer, reducing monthly cost to ~$160.</p>
+	<h3>Later</h3>
+	<p>I would need to learn more about cookies or something to bring the data in from the other pages and calculate this. But here's if everything suddenly goes amazingly:</p>
+	<p><b>Monthly cost:</b> $0</p>
+	<p><b>Initial cost (partly via crowdfunding):</b> Probably less than $2 million USD. After this, each person would be much cheaper.</p>
       </div>
     </div>
 </div>

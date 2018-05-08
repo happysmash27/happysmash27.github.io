@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>College Choices</title>
+  <title>Sources for Portfolio Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="alia.css" />
@@ -11,11 +11,11 @@
   <header class="container">
     <div class="row">
       <div class="col-md-4">
-        <h1 style="margin:0.25em auto">College Choices</h1>
+        <h1 style="margin:0.25em auto">Portfolio Project</h1>
 	<h2 style="margin:0.25em auto">By happysmash27</h2>
       </div>
       <ul class="nav nav-pills novmargin">
-        <li class="active">
+        <li>
           <a href="index.html">Home</a>
         </li>
         <li>
@@ -36,7 +36,7 @@
 	<li>
           <a href="life.html">My Life</a>
         </li>
-	<li>
+	<li class="active">
           <a href="sources.html">Sources</a>
         </li>
       </ul>
@@ -46,56 +46,20 @@
   <article class="container">
     <div class="collumn">
       <div class="row">
-	<div class="carousel slide" id="main_carousel">
-	  <ol class="carousel-indicators">
-	    <li data-target="#main_carousel" data-slide-to="0" class="active"></li>
-	    <li data-target="#main_carousel" data-slide-to="1"></li>
-	    <li data-target="#main_carousel" data-slide-to="2"></li>
-	  </ol>
-	  <ul class="carousel-inner">
-	    <li class="item active">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Akademio_Internacia_de_la_Sciencoj_San_Marino">
-		  <img src="https://upload.wikimedia.org/wikipedia/eo/8/85/Aisemblemo.png" class="d-block center-block" style="width:100%">
-		  <div class="carousel-caption">
-		    <h3>Akademio Internacia de la Sciencoj</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <li class="item">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Technical_University_of_Munich">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/TUM_Audimax.jpg" class="d-block h-100 img-responsive center-block">
-		  <div class="carousel-caption">
-		    <h3>Technical University of Munich</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <li class="item">
-	      <div class="container" style="display:block; width:100%;">
-		<a href="https://en.wikipedia.org/wiki/Technical_University_of_Berlin">
-		  <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Tu_hauptgebaude_2006.jpg" class="d-block h-100 img-responsive center-block">
-		  <div class="carousel-caption">
-		    <h3>Technical University of Berlin</h3>
-		  </div>
-		</a>
-	      </div>
-	    </li>
-	    <a class="left carousel-control" href="#main_carousel" data-slide="prev">
-	      <span class="glyphicon glyphicon-chevron-left"></span>
-	      <span class="sr-only">Previous</span>
-	    </a>
-	    <a class="right carousel-control" href="#main_carousel" data-slide="next">
-	      <span class="glyphicon glyphicon-chevron-right"></span>
-	      <span class="sr-only">Next</span>
-	    </a>
-	</div>
-      </div>
-      <div class="row">
-	<h1>Portfolio</h1>
-	<p></p> 
+	<p>(Please forgive all the Wikipedia sources. My images took a very long time to make, so I was unfortunately not able to get better citations for many things I wanted to get them with. Please view the sources of Wikipedia, or wait for a bit while I update the citations)</p>
+	<cite>Wikipedia contributors. "Credit score." <i>Wikipedia, The Free Encyclopedia</i>. Wikipedia, The Free Encyclopedia, 29 Apr. 2018. Web. 2 May. 2018. </cite>
+	<cite> “How Banks Create Money.” Positive Money, Positive Money, positivemoney.org/how-money-works/how-banks-create-money/. </cite>
+	<cite></cite>
+	<cite>Wikipedia contributors. "Money creation." <i>Wikipedia, The Free Encyclopedia</i>. Wikipedia, The Free Encyclopedia, 22 Apr. 2018. Web. 2 May. 2018. </cite>
+	<cite>Wikipedia contributors. "Credit score in the United States." <i>Wikipedia, The Free Encyclopedia</i>. Wikipedia, The Free Encyclopedia, 29 Apr. 2018. Web. 2 May. 2018. </cite>
+	<cite>Guerra, Tony. "What Credit Score Do They Use for Apartment Eligibility?" Home Guides | SF Gate, http://homeguides.sfgate.com/credit-score-use-apartment-eligibility-95585.html. 19 June 2017. </cite>
+	<cite>Stephanie. “Can I Get Internet With Bad Credit?” Creditscoreresource.com, Credit Score Resource, 21 June 2012, www.creditscoreresource.com/can-i-get-internet-with-bad-credit/401020. </cite>
+	<cite>Biscuit7, et al. “I Have Bad Credit--Options for Wireless Internet???” Cellphoneforums.net, Cellphoneforums.net, cellphoneforums.net/general-cell-phone-forum/t231335-i-have-bad-credit-options-wireless-internet.html#axzz5EK8skO4m. </cite>
+	<cite>Wikipedia contributors. "401(k)." <i>Wikipedia, The Free Encyclopedia</i>. Wikipedia, The Free Encyclopedia, 16 Apr. 2018. Web. 2 May. 2018. </cite>
+	<cite>The Checklist for a New Family Member with an Oink. www.9sites.org/pigrescue/adoptionchecklist.htm. </cite>
+	<cite>Wang, Cassiel. “Top and Relative Quotation Recommended from Cassiel Wang.” Top and Relative Quotation Recommended from Cassiel Wang, 28 Mar. 2018. </cite>
+	<cite>Wikipedia contributors. "Free education." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 25 Apr. 2018. Web. 2 May. 2018. </cite>
+	<cite>Veselinovic, Milena. “Want a Top Notch College Degree but Can't Afford It? Head to Germany.” CNN.com, CNN, 29 Oct. 2014, edition.cnn.com/2014/10/22/world/europe/want-education-cant-pay-germany/. </cite>
       </div>
     </div>
 </div>
